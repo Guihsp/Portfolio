@@ -71,6 +71,9 @@ header{
     scale: 0.9;
     transition: 0.6s;
 }
+#btn-menu{
+    display: none;
+}
 /* Estilizando conteiner Conteudo principal */
 .main-container{
     padding:70px 60px ;
@@ -83,10 +86,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 17vh;
-}
-.container-text-intro{
-    width: 390px;
+    padding: 110px;
 }
 .text-intro {
     color: #eee;
@@ -227,9 +227,8 @@ header{
     background-color: transparent;
     border-radius: 32px;
     border:#5E17EB solid 1px;
-    width: 300px;
-    padding: 100px;
     text-align: center;
+    padding: 100px;
 }
 .projects p{
     width: 120px;
@@ -306,4 +305,63 @@ header{
     transition: 0.6s;
 }
 
-/* Responsividade telas 2560px*/
+/* Responsividade telas 320px*/
+@media (max-width:320px) {
+    /* Menu/ Header*/
+    .logo-name{
+        font-size: 23px;
+    }
+    .nav-list{
+        display: none;
+    }
+    #btn-menu{
+        display: block;
+    }
+    .main-container{
+        padding: 45px 10px;
+    }
+    /*Seção de introdução*/
+    .section-intro{
+        flex-direction: column-reverse;
+        padding: 50px 10px;
+        gap: 15px;
+    }
+    .container-pic img{
+        height: 200px;
+    }
+    .text-intro{
+        font-size: 19px;
+    }
+    #name-intro{
+    font-size: 29px;
+    }
+    .section-about{
+        padding: 5px;
+    }
+    .container-text-about p{
+      font-size: 15px;
+    }
+    .container-contacts-about ul{
+        gap: 10px;
+        padding: 5px 10px;
+    }
+    .contac-item, .contac-link{
+        font-size: 15px;
+        padding: 5px;
+    }
+    .container-cards{
+        gap: 35px;
+    }
+    .card{
+        width: 110px;
+    }
+    .section-projects{
+        padding: 5px;
+    }
+    .container-projects{
+        padding: 10px;
+    }
+    .projects{
+        padding: 65px;
+    }
+}
