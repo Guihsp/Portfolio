@@ -73,6 +73,7 @@ header{
 }
 #btn-menu{
     display: none;
+    padding: 5px 10px;
 }
 /* Estilizando conteiner Conteudo principal */
 .main-container{
@@ -342,10 +343,10 @@ header{
         padding: 5px;
     }
     .container-text-about{
-        padding: 15px;
+        padding: 12px;
     }
     .container-text-about p{
-      font-size: 16px;
+      font-size: 15px;
     }
     .container-contacts-about ul{
         gap: 10px;
@@ -372,8 +373,8 @@ header{
     }
 }
 
-/* Respondendo telas menores 376px*/
-@media (max-width: 376px) {
+/* Responsividade telas 375px*/
+@media (max-width:375px) {
     /* Menu/ Header*/
     header{
         height: 10vh;
@@ -409,10 +410,10 @@ header{
         padding: 5px;
     }
     .container-text-about{
-        padding: 15px;
+        padding: 14px;
     }
     .container-text-about p{
-      font-size: 16px;
+      font-size: 15px;
     }
     .container-contacts-about ul{
         gap: 10px;
@@ -439,8 +440,8 @@ header{
     }
 }
 
-/* Respondendo telas menores 426px*/
-@media (max-width: 426px) {
+/* Responsividade telas 320px*/
+@media (max-width:425px) {
     /* Menu/ Header*/
     header{
         height: 10vh;
@@ -476,7 +477,7 @@ header{
         padding: 5px;
     }
     .container-text-about{
-        padding: 17px;
+        padding: 20px;
     }
     .container-text-about p{
       font-size: 17px;
@@ -503,5 +504,111 @@ header{
     }
     .projects{
         padding: 65px;
+    }
+}
+
+/* Responsividade telas 320px*/
+@media (max-width: 768px) {
+    /* Menu/ Header*/
+    header{
+        height: 10vh;
+    }
+    .logo-name{
+        font-size: 23px;
+    }
+    .nav-list{
+        display: none;
+    }
+    #btn-menu{
+        display: block;
+    }
+    .main-container{
+        padding: 45px 10px;
+    }
+    /*Seção de introdução*/
+    .section-intro{
+        padding: 100px 60px;
+        gap: 15px;
+    }
+    .container-pic img{
+        height: 200px;
+    }
+    .text-intro{
+        font-size: 21px;
+    }
+    #name-intro{
+    font-size: 29px;
+    }
+    .section-about{
+        padding: 5px;
+    }
+    .container-text-about{
+        padding: 20px;
+    }
+    .container-text-about p{
+      font-size: 20px;
+    }
+    .container-contacts-about ul{
+        gap: 10px;
+        padding: 5px 10px;
+    }
+    .contac-item, .contac-link{
+        font-size: 15px;
+        padding: 5px;
+    }
+    .container-cards{
+        gap: 35px;
+    }
+    .card{
+        width: 120px;
+    }
+    .section-projects{
+        padding: 5px;
+    }
+    .container-projects{
+        padding: 20px;
+    }
+    .projects{
+        padding: 100px;
+    }
+    .formation-item{
+        font-size: 20px;
+    }
+}
+
+/* Responsividade telas 320px*/
+@media (max-width: 900px) {
+    /* Menu/ Header*/
+    .main-container{
+        padding: 30px 10px;
+    }
+    .nav-list{
+        display: none;
+    }
+    #btn-menu{
+        display: block;
+    }
+    .section-intro{
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+}
+@media (max-width: 1002px) {
+    /* Menu/ Header*/
+    .main-container{
+        padding: 30px 10px;
+    }
+    .section-intro{
+        gap: 15px;
+    }
+}
+
+@media (max-width: 1102px) {
+    /* Menu/ Header*/
+    .main-container{
+        padding: 30px 10px;
+    }
+    .section-intro{
+        gap: 15px;
     }
 }
