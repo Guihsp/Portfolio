@@ -365,3 +365,63 @@ header{
         padding: 65px;
     }
 }
+
+@media (max-width:376px) {
+    /* Menu/ Header*/
+    .logo-name{
+        font-size: 23px;
+    }
+    .nav-list{
+        display: none;
+    }
+    #btn-menu{
+        display: block;
+    }
+    .main-container{
+        padding: 45px 10px;
+    }
+    /*Seção de introdução*/
+    .section-intro{
+        flex-direction: column-reverse;
+        padding: 50px 10px;
+        gap: 15px;
+    }
+    .container-pic img{
+        height: 200px;
+    }
+    .text-intro{
+        font-size: 19px;
+    }
+    #name-intro{
+    font-size: 29px;
+    }
+    .section-about{
+        padding: 5px;
+    }
+    .container-text-about p{
+      font-size: 15px;
+    }
+    .container-contacts-about ul{
+        gap: 10px;
+        padding: 5px 10px;
+    }
+    .contac-item, .contac-link{
+        font-size: 15px;
+        padding: 5px;
+    }
+    .container-cards{
+        gap: 35px;
+    }
+    .card{
+        width: 110px;
+    }
+    .section-projects{
+        padding: 5px;
+    }
+    .container-projects{
+        padding: 10px;
+    }
+    .projects{
+        padding: 65px;
+    }
+}
