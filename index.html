@@ -1,171 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/Css/style.css">
-    <title>{GuiCode}-Portfólio</title>
+    <title>{GuiCode} Portfólio</title>
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header>
-        <!-- Logo do cabeçalho -->
-        <div class="container-logo">
-            <h1 class="logo-name"> 
-                <span class="text-purple">{</span>Gui<span class="text-purple">Code}|Portfólio</span>
-            </h1>
-        </div>
-        
-        <!-- Links de navegação da pagina -->
-        <nav class="nav-bar">
-            <button id="btn-menu">menu</button>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Tecnologias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Formação</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Curriculo</a>
-                    </li>
-                    <li class="nav-item-icon">
-                        <a href="https://github.com/Guihsp" target="_blank" class="nav-link-icon" id="nav-link-icon-github">
-                            <img src="assets/imgs/github.svg" alt="Gitihub link">
-                        </a>
-                    </li>
-                    <li class="nav-item-icon">
-                        <a href="https://linkedin.com/in/guilherme-henrique-silva-pereira-9283b023a" target="_blank" class="nav-link-icon" id="nav-link-icon-linkedin">
-                            <img src="assets/imgs/Linkedin.svg" alt="Linkedin link" >
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            
+        <h1 id="logo">
+            <span class="text-purple">{</span>Gui<span class="text-purple">Code}</span>
+        </h1>
+
+        <nav id="nav-bar">
+            <button id="btn-menu">
+                Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Tecnologias</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Certificados</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contatos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Github</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Linkedin</a>
+                </li>
+            </ul>
         </nav>
+        
     </header>
-    <!-- Conteudo do portfólio -->
-    <main class="main-container">
-        <!-- Introdução do portifolio -->
-        <section class="section-intro">
-                <div class="container-text-intro">
-                    <p class="text-intro">Olá,eu sou</p>
-                    <h1 class="text-purple" id="name-intro">Guilherme Henrique</h1>
-                    <p class="text-intro">Futuro Dev 
-                        <span class="text-purple">Full-Stack</span> 
-                        <p class="text-intro">e apaxionado por<span class="text-purple"> porprogramação.</span></p>
-                        <p class="text-intro">Bem Vindo ao meu <span class="text-purple">Portfólio.</span></p>
-                    </p>
-                </div>
-                <div class="container-pic">
-                        <img src="assets/imgs/profile-pic-415x415.png" alt="Foto">
-                </div>
-        </section>
-        <!-- Seção 'sobre' do portifolio -->
-        <section class="section-about">
-            <div class="container-main-about">
-                <h1 class="section-title">Sobre</h1>
-                    
-                <div class="container-text-about">
-                    <p>Olá, meu nome é <span class="text-purple">Guilherme</span>, tenho 19 anos e sou apaixonado por programação.</p>
-                    <p>Atualmente estou cursando o segundo semestre de <span class="text-purple">ADS (Analise e Desenvolvimento de Sistemas)</span> no Centro Universitário Senac.</p>
-                    <p>Tenho como <span class="text-purple">objetivo</span> me tornar um <span class="text-purple">Dev Full-Stack</span>. Porém, hoje Busco <span class="text-purple">experiência</span> com <span class="text-purple">Back-End</span>.</p>
-                    <p>Esse Portfólio visa, aumentar meus <span class="text-purple"> conhecimentos</span> em <span class="text-purple">HTML5, CSS3 e JavaScript</span> e outras futuras linguagens que pretendo aprender.</p>
-                </div>
-            </div>
-            <div class="container-contacts-about">
-                <p class="subttile">*Alguns dos meus contatos</p>
-                <h2 class="text-purple" id="title-contacts">Contados:</h2>
-                <ul>
-                    <li class="contac-item">Email: Guilhermehsp26@gmail.com</li>
-                    <li class="contac-item">Telefone: (11) 99312-3958</li>
-                    <li class="contac-item"><a class="contac-link" href="http://Github.com/guihsp" target="_blank" rel="noopener noreferrer">Github</a></li>
-                    <li class="contac-item"><a class="contac-link" href="http://linkedin.com/in/guilherme-henrique-silva-pereira-9283b023a" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
-                </ul>
-            </div>
-        </section>
-        <!-- Seção de apresentação das tecnologias -->
-        <section class="section-technologies">
-            <h1 class="section-title">Tecnologias</h1>
-            <p>*Quando uma nova tecnologia é aprendida, eu adiciono ela aqui.</p>
-            <div class="container-cards">
-                <div class="card">
-                    <img src="assets/imgs/img-languages/html5.svg" alt="Imagem HTMl5" class="card-img">
-                    <p class="card-subtitle">HTML5</p>
-                </div>
-                <div class="card">
-                    <img src="assets/imgs/img-languages/css3-alt.svg" alt="Imagem CSS3" class="card-img">
-                    <p class="card-subtitle">CSS3</p>
-                </div>
-                <div class="card">
-                    <img src="assets/imgs/img-languages/js.svg" alt="Imagem JavaScript" class="card-img">
-                    <p class="card-subtitle">JavaScript</p>
-                </div>
-                <div class="card">
-                    <img src="assets/imgs/img-languages/java.svg" alt="Imagem JAVA" class="card-img">
-                    <p class="card-subtitle">JAVA</p>
-                </div>
-            </div>
-        </section>
-        <!-- Seção de apresentação dos projetos -->
-        <section class="section-projects">
-            <h1 class="section-title">Projetos</h1>
-            <p>*Quando um novo projeto é feito ele é adicionado aqui.</p>
-            <div class="container-projects">
-                <div class="projects">
-                    <p>+</p>
-                    <p>Em Construção</p>
-                </div>
-                <div class="projects">
-                    <p>+</p>
-                    <p>Em Construção</p>
-                </div>
-                <div class="projects">
-                    <p>+</p>
-                    <p>Em Construção</p>
-                </div>
-            </div>
-        </section>
-        <!-- Seção de aprentadação da Formação -->
-        <section class="section-formation">
-            <h1 class="section-title">Formação Técnica</h1>
-            <p id="subttile-formation">*Em que sou certificado.</p>
-            <div class="container-formation">
-                <ul>
-                    <li class="formation-item">
-                        Certificado em Assistente de Suporte e Manutenção de Computadores no Centro Universitário Senac.
-                        <p class="item-subtitle">Concluído</p>
-                    </li>
-                    <li class="formation-item">
-                        Certificado em Assistente Operações de Redes de Computadores no Centro Universitário Senac.
-                        <p class="item-subtitle">Concluído / Em emisão</p>
-                    </li>
-                    <li class="formation-item">
-                        Certificado em Assistente de Desenvolvimento de Aplicativos Computacionais no Centro Universitário Senac.
-                        <p class="item-subtitle">Concluído / Em emisão</p>
-                    </li>
-                    <li class="formation-item">
-                        Certificado em 5º Torneio Senac de Robótica no Centro Universitário Senac.
-                        <p class="item-subtitle">Concluído</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- Seção de aprentadação do curriculo -->
-        <section class="section-cv">
-            <h1 class="section-title">Curriculo</h1>
-            <div class="container-cv">
-                <p>*Para acessar o curriculo basta clicar no botão.</p>
-                <a id="btn-download" href="assets/download/Currículo.pdf" target="_blank" rel="noopener noreferrer" download>Download CV</a>
-            </div>
-        </section>
-    </main>
+    <script src="assets/JS/index.js"></script>
 </body>
 </html>
