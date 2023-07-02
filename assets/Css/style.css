@@ -37,7 +37,8 @@ header{
     background-color: #111;
     border-bottom: #5E17EB 2px solid;
     list-style: none;
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     position: absolute;
     width: 100%;
@@ -86,8 +87,6 @@ header{
 }
 #nav-bar.active .nav-list{
     height: 48vh;
-    display: flex;
-    flex-direction: column;
     visibility: visible;
     overflow-y: auto;
 }
@@ -102,4 +101,8 @@ header{
 #nav-bar.active #hamburger::before{
     background-color: red;
     transform: rotate(-135deg);
+}
+
+main{
+    margin-top: 10vh;
 }
