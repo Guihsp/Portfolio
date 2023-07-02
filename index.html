@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/Css/style.css">
     <title>{GuiCode} Portfólio</title>
 </head>
+
 <body>
     <header>
         <h1 id="logo">
@@ -34,34 +36,128 @@
                     <a href="#" class="nav-link">Contatos</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Github</a>
+                    <a href="#" class="nav-link" target="_blank">Github</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Linkedin</a>
+                    <a href="#" class="nav-link" target="_blank">Linkedin</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
+
         <section id="section-intro">
             <div id="background-pic">
-                <img src="" alt="">
+                <img src="assets/imgs/img-profilePic/profile-pic-415x415.png" alt="Foto de perfil" id="profile-pic">
+            </div>
+            <div id="text-intro">
+                <p>Olá, eu sou</p>
+                <h1 id="name-intro" class="text-purple">Guilherme Henrqiue</h1>
+                <p>Futuro Dev <span class="text-purple">Full-Stack</span> e apaxionado por <span
+                        class="text-purple">Programação.</span></p>
+                <p>Bem vindo ao meu <span class="text-purple">Portfólio.</span></p>
+            </div>
+            <ul>
+                <li class="intro-intem"><a href="assets/download/Currículo.pdf" class="intro-link" id="link-cv"
+                        download>Download CV</a></li>
+                <li class="intro-intem"><a href="https://github.com/Guihsp/Potfolio-site" class="intro-link"
+                        id="link-repository" target="_blank">Ver Repositorio</a></li>
+            </ul>
+        </section>
+
+        <section id="section-about">
+            <h1 id="title-about" class="text-purple">Sobre</h1>
+            <div id="text-about">
+                <p>
+                    Olá, meu nome é <span class="text-purple">Guilherme</span>, tenho 19 anos e sou apaixonado por programação.
+                    Atualmente estou cursando o segundo semestre de <span class="text-purple">ADS (Analise e Desenvolvimento de Sistemas)</span> no <span class="text-purple">Centro
+                    Universitário Senac.</span>
+                    Tenho como objetivo me tornar um <span class="text-purple">Dev Full-Stack.</span> Porém, hoje Busco experiência com <span class="text-purple">Back-End.</span>
+                    Esse Portfólio visa, aumentar meus conhecimentos em <span class="text-purple">HTML5, CSS3 e JavaScript</span> e outras futuras linguagens
+                    que pretendo aprender.
+                </p>
             </div>
         </section>
-        <section id="section-about">
-            
-        </section>
-        <section id="section-technologies">
-            
-        </section>
-        <section id="section-projects">
-            
-        </section>
-        <section id="section-certificates">
-            
-        </section>
-        <section id="section-contact">
 
+        <section id="section-technologies">
+            <h1 id="title-technologies" class="text-purple">Tecnologias</h1>
+            <div id="container-cads">
+                <div class="card">
+                    <img src="assets/imgs/img-languages/html5.svg" alt="HTML5">
+                    <p>HTML5</p>
+                </div>
+                <div class="card">
+                    <img src="assets/imgs/img-languages/css3-alt.svg" alt="CSS3">
+                    <p>CSS3</p>
+                </div>
+                <div class="card">
+                    <img src="assets/imgs/img-languages/js.svg" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="card">
+                    <img src="assets/imgs/img-languages/java.svg" alt="java">
+                    <p>JAVA</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-projects">
+            <h1 id="title-projects" class="text-purple">Projetos</h1>
+            <div class="projects">
+                <p>Em Construção</p>
+            </div>
+            <div class="projects">
+                <p>Em Construção</p>
+            </div>
+            <div class="projects">
+                <p>Em Construção</p>
+            </div>
+        </section>
+
+        <section id="section-certificates">
+            <h1 id="title-certificatest" class="text-purple">Certificados</h1>
+            <div id="text-certificatest">
+                <ul>
+                    <li class="certificatest-item">
+                        Certificado em Assistente de Suporte e Manutenção de Computadores no Centro Universitário Senac.
+                        <p class="text-purple">Concluído</p>
+                    </li>
+                    <li class="certificatest-item">
+                        Certificado em Assistente Operações de Redes de Computadores no Centro Universitário Senac.
+                        <p class="text-purple">Concluído / Em emisão</p>
+                    </li>
+                    <li class="certificatest-item">
+                        Certificado em Assistente de Desenvolvimento de Aplicativos Computacionais no Centro Universitário Senac.
+                        <p class="text-purple">Concluído / Em emisão</p>
+                    </li>
+                    <li class="certificatest-item">
+                        Certificado em 5º Torneio Senac de Robótica no Centro Universitário Senac.
+                        <p class="text-purple">Concluído</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="section-contact">
+            <h1 id="title-contact" class="text-purple">Contatos</h1>
+            <div id="container-contacts">
+                <div class="contact">
+                    <img src="assets/imgs/img-contacts/mail.png" alt="E-mail">
+                    <p>Guilhermehsp26@gmail.com</p>
+                </div>
+                <div class="contact">
+                    <img src="assets/imgs/img-contacts/phone.png" alt="Telefone">
+                    <p>Telefone: (11) 99312-3958</p>
+                </div>
+                <div class="contact">
+                    <img src="assets/imgs/img-contacts/brand-github-filled.png" alt="Github">
+                    <p><a href="http://" target="_blank" rel="noopener noreferrer">Github</a></p>
+                </div>
+                <div class="contact">
+                    <img src="assets/imgs/img-contacts/brand-linkedin.png" alt="Linkedin">
+                    <p><a href="http://" target="_blank" rel="noopener noreferrer">Linkedin</a></p>
+                </div>
+            </div>
         </section>
 
     </main>
