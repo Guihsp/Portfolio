@@ -363,6 +363,7 @@ main {
 #btn-top{
     background-color: #5E17EB;
     border-radius: 100%;
+    border: #000 2px solid;
     display: flex;
     align-items: center;
     justify-content: center;
