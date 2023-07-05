@@ -53,7 +53,9 @@ header {
 
 .nav-list {
     background-color: #111;
+    border-left: #5E17EB solid 2px;
     list-style: none;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -70,7 +72,7 @@ header {
 .nav-link {
     color: #9ca3af;
     text-decoration: none;
-    padding: .5rem 0;
+    padding: .4rem 10px;
 }
 
 .nav-item {
@@ -108,7 +110,6 @@ header {
 
 #nav-bar.active .nav-list {
     left: 50%;
-    border-left: #5E17EB solid 2px;
     visibility: visible;
     overflow-y: auto;
 }
@@ -436,6 +437,7 @@ main {
         border-bottom: none;
         display: flex;
         justify-content: space-evenly;
+        border: none;
         flex-direction: row;
         position: static;
         right: auto;
@@ -449,7 +451,7 @@ main {
     }
 
     .nav-item {
-        border-bottom: none;
+        border: none;
         margin: 0;
     }
 
