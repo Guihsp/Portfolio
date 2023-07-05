@@ -11,11 +11,20 @@
     #7047c2;
     #9ca3af
 */
-html , body {
+html,
+body {
     background-color: #111;
     width: 100%;
     height: 100%;
     scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5E17EB;
 }
 
 header {
@@ -44,20 +53,19 @@ header {
 
 .nav-list {
     background-color: #111;
-    border-bottom: #5E17EB 2px solid;
+    border-left: #5E17EB solid 2px;
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     position: absolute;
-    width: 100%;
+    width: 50%;
     top: 10vh;
-    right: 0;
-    height: 0;
+    left: 100%;
+    height: 90vh;
     z-index: 10000;
     transition: .6s;
     visibility: hidden;
-    overflow-y: hidden;
 }
 
 .nav-link {
@@ -74,7 +82,6 @@ header {
 #btn-menu {
     padding: 5px 10px;
     display: flex;
-    font-weight: bold;
     background-color: #5E17EB;
     border: none;
     border-radius: 20px;
@@ -101,7 +108,7 @@ header {
 }
 
 #nav-bar.active .nav-list {
-    height: 48vh;
+    left: 50%;
     visibility: visible;
     overflow-y: auto;
 }
@@ -168,9 +175,9 @@ main {
 .intro-link {
     text-decoration: none;
     color: #eee;
+    font-weight: bold;
     padding: 10px 8px;
     border-radius: 32px;
-    cursor: pointer;
     transition: .6s;
 }
 
@@ -360,7 +367,7 @@ main {
     height: 3em;
 }
 
-#btn-top{
+#btn-top {
     background-color: #5E17EB;
     border-radius: 100%;
     border: #000 2px solid;
@@ -372,7 +379,7 @@ main {
     right: 10px;
 }
 
-#btn-top img{
+#btn-top img {
     height: 6vh;
 }
 
@@ -451,11 +458,15 @@ main {
         position: relative;
     }
 
+    .nav-link:hover {
+        color: #eee;
+    }
+
     .nav-link::after {
+        background: linear-gradient(to right, transparent, #9ca3af);
         content: " ";
         width: 0%;
         height: 2px;
-        background: linear-gradient(to right, transparent, #9ca3af);
         position: absolute;
         bottom: 0;
         left: 0;
