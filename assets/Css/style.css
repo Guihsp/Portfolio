@@ -132,7 +132,7 @@ main {
     margin-top: 10vh;
 }
 
-#section-intro {
+#intro {
     padding: 3rem 1rem;
     display: flex;
     flex-direction: column;
@@ -165,7 +165,7 @@ main {
     font-weight: bold;
 }
 
-#section-intro ul {
+#intro ul {
     display: flex;
     list-style: none;
     gap: 25px;
@@ -198,7 +198,7 @@ main {
     background-color: #5E17EB;
 }
 
-#section-about {
+#sobre {
     padding: 1rem;
     background-color: #151515;
     display: flex;
@@ -219,7 +219,7 @@ main {
     font-size: 17px;
 }
 
-#section-technologies {
+#tecnologias {
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -230,7 +230,7 @@ main {
     text-align: center;
 }
 
-#section-technologies p {
+#tecnologias p {
     color: #9ca3af;
 }
 
@@ -263,7 +263,7 @@ main {
     box-shadow: 0 0 10px #5E17EB;
 }
 
-#section-projects {
+#projetos {
     background-color: #151515;
     padding: 1rem;
     display: flex;
@@ -295,7 +295,7 @@ main {
     text-align: center;
 }
 
-#section-certificates {
+#certificados {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -324,7 +324,7 @@ main {
     font-size: 17px;
 }
 
-#section-contact {
+#contatos {
     background-color: #151515;
     display: flex;
     flex-direction: column;
@@ -433,7 +433,7 @@ main {
     }
 
     .nav-list {
-        border-bottom: none;
+        border: none;
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
@@ -449,7 +449,7 @@ main {
     }
 
     .nav-item {
-        border-bottom: none;
+        border: none;
         margin: 0;
     }
 
@@ -477,7 +477,7 @@ main {
         width: 100%;
     }
 
-    #section-intro {
+    #intro {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
@@ -493,7 +493,7 @@ main {
         height: 290px;
     }
 
-    #section-about {
+    #sobre {
         padding: 5vh 10vw;
     }
 
@@ -509,7 +509,7 @@ main {
         font-size: 22px;
     }
 
-    #section-technologies {
+    #tecnologias {
         padding: 5vh 10vw;
     }
 
@@ -517,7 +517,7 @@ main {
         font-size: 35px;
     }
 
-    #section-projects {
+    #projetos {
         padding: 5vh 10vw;
     }
 
@@ -525,7 +525,7 @@ main {
         font-size: 35px;
     }
 
-    #section-certificates {
+    #certificados {
         padding: 5vh 10vw;
     }
 
@@ -537,7 +537,7 @@ main {
         font-size: 22px;
     }
 
-    #section-contact {
+    #contatos {
         padding: 5vh 10vw;
     }
 
