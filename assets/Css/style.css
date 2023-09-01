@@ -94,7 +94,6 @@ header .container{
 
 #btn-menu{
     padding: 0.313rem 0.625rem;
-    display: flex;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -138,4 +137,19 @@ header .container{
 #nav-bar.active #hamburger::before {
     background-color: #ff0000;
     transform: rotate(-135deg);
+}
+
+main{
+    margin-top: 10vh;
+}
+
+#intro .container{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+
+.intro-img img{
+    height: 50%;
 }
