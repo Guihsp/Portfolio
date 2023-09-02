@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary-color: #5E17EB;
     --primary-background-color: #111;
     --secondary-background-color: #151515;
@@ -33,14 +33,18 @@ body {
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
 }
 
-.text-purple{
+.text-purple {
     color: var(--primary-color);
 }
 
-header .container{
+.text {
+    color: var(--text-color);
+}
+
+header .container {
     width: 100%;
     height: 10vh;
     background: var(--primary-background-color);
@@ -53,13 +57,13 @@ header .container{
     justify-content: space-between;
 }
 
-#logo-text{
+#logo-text {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--text-color);
 }
 
-.nav-list{
+.nav-list {
     background-color: var(--secondary-background-color);
     border-left: var(--border-color) solid 2px;
     list-style: none;
@@ -81,6 +85,7 @@ header .container{
     text-decoration: none;
     padding: .4rem 0.625rem;
 }
+
 .nav-link:hover {
     color: var(--text-color);
     transition: .5s;
@@ -92,7 +97,7 @@ header .container{
     padding: .8rem;
 }
 
-#btn-menu{
+#btn-menu {
     padding: 0.313rem 0.625rem;
     background-color: transparent;
     border: none;
@@ -139,17 +144,78 @@ header .container{
     transform: rotate(-135deg);
 }
 
-main{
+main {
     margin-top: 10vh;
 }
 
-#intro .container{
-    display: flex;
-    flex-direction: column;
+#intro {
+    width: 100%;
     height: 90vh;
+    background: var(--primary-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+#intro .container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.0rem;
+}
 
-.intro-img img{
-    height: 50%;
+.intro-img {
+    height: 250px;
+    background: var(--primary-color);
+    border-radius: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.intro-text-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.intro-text {
+    text-align: center;
+}
+
+.intro-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.btn {
+    background: var(--primary-color);
+    color: var(--text-color);
+    text-decoration: none;
+    padding: .6rem .7rem;
+    border-radius: 20px;
+    border: var(--border-color) solid 2px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-dowloand {
+    background: transparent;
+    border: var(--border-color) solid 2px;
+}
+
+.btn:hover {
+    background: var(--primary-color);
 }
