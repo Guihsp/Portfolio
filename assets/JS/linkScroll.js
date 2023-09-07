@@ -11,6 +11,6 @@ function scrollTOIdOnClick(event) {
     const section = document.querySelector(id).offsetTop;
 
     window.scroll({
-        top: section - 60
+        top: section - 70
     })
 }
