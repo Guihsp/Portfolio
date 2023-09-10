@@ -5,157 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/Css/style.css">
-    <link rel="shortcut icon" href="assets/imgs/favicon/favicon.png" type="image/x-icon">
     <title>{GuiCode} Portfólio</title>
 </head>
 
 <body>
+   
     <header>
         <div class="container">
             <div class="logo">
-                <h1 id="logo-text">
-                    <span class="text-purple">{</span>Gui<span class="text-purple">}|Portfólio</span>
+                <h1 class="text-logo">
+                    Gui.<span class="text-blue">Portfolio();</span>
                 </h1>
             </div>
-            <nav id="nav-bar">
-                <button id="btn-menu" title="Menu">
+
+            <nav class="nav-bar">
+                <button id="btn-menu">
                     <span id="hamburger"></span>
                 </button>
+
                 <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#tecnologies" class="nav-link">Tecnologias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projetos" class="nav-link">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#certificados" class="nav-link">Certificados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contatos" class="nav-link">Contatos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://github.com/Guihsp" class="nav-link" target="_blank">Github</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://linkedin.com/in/guilherme-henrique-silva-pereira-9283b023a" class="nav-link"
-                            target="_blank">Linkedin</a>
-                    </li>
+                    <li class="nav-item"><a href="#home">Sobre</a></li>
+                    <li class="nav-item"><a href="#sobre">Tecnologias</a></li>
+                    <li class="nav-item"><a href="#servicos">Projetos</a></li>
+                    <li class="nav-item"><a href="#contato">Certificados</a></li>
                 </ul>
+
+                <div class="nav-btn">
+                    <a href="" class="btn btn-github">GitHub</a>
+                    <a href="" class="btn btn-linkedin">Linkedin</a>
+                </div>
             </nav>
+        </div>
     </header>
-    <main>
-        <section id="intro">
-            <div class="container">
-                <div class="intro-img">
-                    <img src="./assets/imgs/profilePic/profile-pic-415x415.png" alt="Foto de perfil do Guilherme"
-                        title="Foto de perfil do Guilherme">
-                </div>
-                <div class="intro-text-btn">
 
-                    <div class="intro-text">
-                        <p class="text">Olá, eu sou</p>
-                        <h1 id="intro-name" class="text-purple">Guilherme Henrqiue</h1>
-                        <p class="text">Futuro Dev <span class="text-purple">Full-Stack</span> e apaxionado por <span
-                                class="text-purple">Desnvolvimento Web.</span></p>
-                        <p class="text">Bem vindo ao meu <span class="text-purple">Portfólio.</span></p>
-                    </div>
 
-                    <div class="intro-btn">
-                        <a href="./assets/download/Currículo (1).pdf" class="btn btn-dowloand">Download CV</a>
-                        <a href="https://github.com/Guihsp/Potfolio-site" class="btn btn-contatos">Repositorio</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about">
-            <div class="container">
-                <h1 class="title">Sobre</h1>
-                <div class="container-text">
-                    <p class="text">Meu nome é Guilherme Henrique, tenho 19 anos e sou estudante de Análise e
-                        Desenvolvimento de Sistemas no Centro Universitario Senac e estou no 2° Semestre.</p>
-                    <p class="text">Sou apaixonado por tecnologia e desenvolvimento web, e estou sempre em busca de
-                        novos conhecimentos e desafios.</p>
-                    <p class="text">Atualmente estou estudando as tecnologias: HTML, CSS, JavaScript, java, MySQL,
-                        Git, Typescript e React.</p>
-                    <p class="text">Meus objetivos são: Aprender cada vez mais sobre desenvolvimento web, me tornar
-                        um desenvolvedor Full-Stack e trabalhar em uma empresa que me proporcione um ambiente de
-                        trabalho agradável e que me ajude a crescer profissionalmente.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="tecnologies">
-            <div class="container">
-                <h1 class="title">Tecnologias</h1>
-                <div class="container-tecnologies">
-                    <div class="box-tecnologies">
-                        <div class="box"><img src="./assets/imgs/svg/tecnologias/html5.svg" alt="HTML 5">
-                            <p>HTML 5</p>
-                        </div>
-                        <div class="box"><img src="./assets/imgs/svg/tecnologias/css3-alt.svg" alt="css3">
-                            <p>CSS 3</p>
-                        </div>
-                        <div class="box"><img src="./assets/imgs/svg/tecnologias/js.svg" alt="JavaScript">
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="box"><img src="./assets/imgs/svg/tecnologias/react.svg" alt="React">
-                            <p>React</p>
-                        </div>
-                        <div class="box"><img src="./assets/imgs/svg/tecnologias/icons8-typescript.svg" alt="Typescript">
-                            <p>Typescript</p>
-                        </div>
-                        <div class="box"><img src="./assets/imgs/svg/tecnologias/java.svg" alt="Java">
-                            <p>java</p>
-                        </div>
-                        <div class="box"><img src="./assets/imgs/svg/tecnologias/git-alt.svg" alt="Git">
-                            <p>Git</p>
-                        </div>
-                        <div class="box"><img src="./assets/imgs/svg/tecnologias/icons8-logo-mysql.svg" alt="MySQL">
-                            <p>MySQL</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projetos">
-            <div class="container">
-                <h1 class="title">Projetos</h1>
-                <div class="container-projetos">
-                    <div class="box-projetos">
-                        <div class="box">
-
-                        </div>
-                        <div class="box">
-
-                        </div>
-                        <div class="box">
-
-                        </div>
-                        <div class="box">
-
-                        </div>
-                    </div>
-                </div>
-        </section>
-
-        <section id="certificados">
-            <div class="container">
-
-            </div>
-        </section>
-
-        <section id="contados">
-            <div class="container">
-
-            </div>
-        </section>
-    </main>
 
     <script src="assets/JS/linkScroll.js"></script>
     <script src="assets/JS/btnTop.js"></script>
