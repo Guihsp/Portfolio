@@ -3,7 +3,7 @@
     --color-black: #222222;
     --color-white: #fff;
     --color-blue: #1C5D99;
-    --font-primary: Helvetica, sans-serif;
+    --font-primary:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 * {
@@ -50,6 +50,10 @@ header .container {
     color: var(--color-blue);
 }
 
+.text {
+    color: var(--color-black);
+}
+
 .text-logo {
     font-size: 1.7rem;
     font-weight: 600;
@@ -67,7 +71,7 @@ header .container {
     align-items: center;
     gap: 1rem;
     height: 100%;
-    width: 60%;
+    width: 67%;
 }
 
 .nav-list {
@@ -76,13 +80,34 @@ header .container {
     align-items: center;
     gap: 1rem;
     list-style: none;
+    height: 100%;
 }
 
-.nav-item a {
+.nav-link {
     text-decoration: none;
     color: var(--color-black);
     font-weight: bolder;
-    font-size: 1rem;
+    padding: .5rem .2rem;
+    position: relative;
+}
+
+.nav-link::after{
+    content: " ";
+    background: linear-gradient(to right, transparent, var(--color-blue));
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all .3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: var(--color-blue);
 }
 
 .nav-btn {
@@ -117,3 +142,92 @@ header .container {
     background-color: var(--color-white);
     color: var(--color-blue);
 }
+
+main {
+    width: 100%;
+    height: 100%;
+    padding-top: 10vh;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+
+#home .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+}
+
+.home-text-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.name-home{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--color-blue);
+}
+
+.text-home {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+.home-btn{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-home {
+    padding: .5rem 1.7rem;
+    border: var(--color-blue) 2px solid;
+    border-radius: 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-blue);
+    transition: all .3s ease-in-out;
+}
+
+.btn-download:hover{
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+.btn-repository {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border: var(--color-blue) 2px solid;
+    transition: all .3s ease-in-out;
+}
+
+.btn-repository:hover {
+    background-color: var(--color-white);
+    color: var(--color-blue);
+}
+
+.home-img{
+    background: var(--color-black);
+    padding: .5rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-img img{
+    width: 260px;
+    height: 260px;
+}
+
