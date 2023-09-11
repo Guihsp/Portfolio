@@ -3,7 +3,7 @@
     --color-black: #222222;
     --color-white: #fff;
     --color-blue: #1C5D99;
-    --font-primary:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font-primary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 * {
@@ -24,10 +24,22 @@ body {
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
 }
 
-/* Path: assets/Css/Components/Navbar.css */
+.text-blue {
+    color: var(--color-blue);
+}
+
+.text {
+    color: var(--color-black);
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+}
+
 header {
     width: 100%;
     height: 10vh;
@@ -44,14 +56,6 @@ header .container {
     align-items: center;
     gap: 1rem;
     height: 100%;
-}
-
-.text-blue {
-    color: var(--color-blue);
-}
-
-.text {
-    color: var(--color-black);
 }
 
 .text-logo {
@@ -91,7 +95,7 @@ header .container {
     position: relative;
 }
 
-.nav-link::after{
+.nav-link::after {
     content: " ";
     background: linear-gradient(to right, transparent, var(--color-blue));
     width: 0%;
@@ -149,7 +153,7 @@ main {
     padding-top: 10vh;
 }
 
-#home{
+#home {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,7 +161,7 @@ main {
     width: 100%;
 }
 
-#home .container{
+#home .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -166,13 +170,13 @@ main {
     width: 100%;
 }
 
-.home-text-btn{
+.home-text-btn {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.name-home{
+.name-home {
     font-size: 2.5rem;
     font-weight: 600;
     color: var(--color-blue);
@@ -184,7 +188,7 @@ main {
     color: var(--color-black);
 }
 
-.home-btn{
+.home-btn {
     display: flex;
     gap: 1rem;
 }
@@ -201,7 +205,7 @@ main {
     transition: all .3s ease-in-out;
 }
 
-.btn-download:hover{
+.btn-download:hover {
     background-color: var(--color-blue);
     color: var(--color-white);
 }
@@ -218,7 +222,7 @@ main {
     color: var(--color-blue);
 }
 
-.home-img{
+.home-img {
     background: var(--color-black);
     padding: .5rem;
     border-radius: 100%;
@@ -226,8 +230,117 @@ main {
     justify-content: center;
     align-items: center;
 }
-.home-img img{
+
+.home-img img {
     width: 260px;
     height: 260px;
 }
 
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0;
+}
+
+#about .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--color-black);
+    border-radius: 24px;
+    border: var(--color-blue) 4px solid;
+    padding: 2rem 1.5rem;
+}
+
+.text-about {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.box-about {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+
+.btn-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .7rem;
+    border: var(--color-white) 2px solid;
+    border-radius: 100%;
+    background: var(--color-blue);
+    transition: all .3s ease-in-out;
+}
+
+.btn-about:hover {
+    transform: scale(1.1);
+}
+
+#tecnologies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0;
+}
+
+#tecnologies .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.tecnologies-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tecnologies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 80%;
+}
+
+.tecnologies-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem;
+    border-radius: 24px;
+    background: var(--color-black);
+    border: var(--color-blue) 2px solid;
+    color: var(--color-white);
+    font-weight: 500;
+    width: 130px;
+    height: 130px;
+}
