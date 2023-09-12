@@ -21,6 +21,14 @@ body {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-blue);
+}
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -38,6 +46,12 @@ body {
 .title {
     font-size: 2rem;
     text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 header {
@@ -322,11 +336,11 @@ main {
 
 .tecnologies {
     display: flex;
-    justify-content: center;
+    justify-content:  center;
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-    width: 80%;
+    width: 90%;
 }
 
 .tecnologies-item {
@@ -343,4 +357,123 @@ main {
     font-weight: 500;
     width: 130px;
     height: 130px;
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0;
+}
+
+#projects .container{ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.projects-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 80%;
+}
+
+.project-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border: var(--color-blue) 2px solid;
+    color: var(--color-black);
+    width: 310px;
+    height: 200px;
+}
+
+.box-btn {
+    position:relative;
+    top: 31%;
+    left: 0%;
+    background: var(--color-blue);
+    color: var(--color-white);
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    padding: .3rem;
+}
+
+
+.btn-projct {
+    background: var(--color-blue);
+    color: var(--color-white);
+    border-radius: 24px;
+    border: var(--color-white) 2px solid;
+    font-weight: 400;
+    width: 100px;
+    padding: .2rem .5rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btn-projct:hover{
+    background: var(--color-white);
+    color: var(--color-blue);
+}
+
+#certificados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0;
+}
+
+#certificados .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.certificados-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.box-certificados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 24px;
+    border: var(--color-blue) 2px solid;
+    color: var(--color-black);
+    font-weight: 500;
+    width: 80%;
+    padding: 2rem;
+}
+
+.box-certificados ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
 }
