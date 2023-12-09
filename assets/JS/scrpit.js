@@ -91,8 +91,8 @@ const typeWriter = () => {
     }
 
     typing(title);
-    setTimeout(() => typing(p1), 2000);
-    setTimeout(() => typing(p2), 5200);
+    setTimeout(() => typing(p1), 1900);
+    setTimeout(() => typing(p2), 5275);
 }
 
 typeWriter();
