@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/Css/style.css">
-    <title>{GuiCode} Portfólio</title>
+    <title>Gui.portfólio();</title>
 </head>
 
 <body>
@@ -13,28 +13,32 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1 class="text-logo">
-                    Gui.<span class="text-blue">portfolio();</span>
-                </h1>
+                <h1>Gui.<span>portfólio();</span></h1>
             </div>
 
-            <nav class="nav-bar">
+            <nav id="nav-bar">
                 <button id="btn-menu">
                     <span id="hamburger"></span>
                 </button>
-
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
-                    <li class="nav-item"><a href="#tecnologies" class="nav-link">Tecnologias</a></li>
-                    <li class="nav-item"><a href="#projects" class="nav-link">Projetos</a></li>
-                    <li class="nav-item"><a href="#certificados" class="nav-link">Certificados</a></li>
+                <ul>
+                    <li><a href="#home" class="nav-link">Inicío</a></li>
+                    <li><a href="#about" class="nav-link">Sobre</a></li>
+                    <li><a href="#tecnologies" class="nav-link">Tecnologias</a></li>
+                    <li><a href="#projects" class="nav-link">Projetos</a></li>
+                    <li><a href="#certificados" class="nav-link">Certificados</a></li>
+                    <li>
+                        <a href="" class="nav-btn btn-github" target="_blank">
+                            <img src="./assets/imgs/Icons/tecnologies/github.svg" alt="">
+                            Github
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-btn btn-linkedin" target="_blank">
+                            <img src="./assets/imgs/Icons/contacts/linkedin.svg" alt="">
+                            Linkedin
+                        </a>
+                    </li>
                 </ul>
-
-                <div class="nav-btn">
-                    <a href="https://github.com/Guihsp" target="_blank" class="btn btn-github">GitHub</a>
-                    <a href="https://www.linkedin.com/in/guilherme-henrique-silva-pereira-9283b023a" target="_blank" class="btn btn-linkedin">Linkedin</a>
-                </div>
             </nav>
         </div>
     </header>
@@ -42,173 +46,48 @@
     <main>
         <section id="home">
             <div class="container">
-                <div class="home-text-btn">
+                <div class="home-content">
                     <div class="home-text">
-                        <p class="text-home text">Olá👋, eu sou</p>
-                        <h1 class="name-home">Guilherme Henrique</h1>
-                        <p class="text-home text">Futuro Dev Full Stack e apaixionado por Desenvolvimento Web</p>
-                        <p class="text-home text">Bem-Vindo ao meu Portfólio</p>
+                        <h2 class="home-title"></h2>
+                        <p class="sub1"></p>
+                        <p class="sub2"></p>
                     </div>
-                    <div class="home-btn">
-                        <a href="./assets/download/Currículo.pdf" class="btn-home btn-download" download>Download CV</a>
-                        <a href="https://github.com/Guihsp/Potfolio-site" target="_blank" class="btn-home btn-repository">Repositorio</a>
+
+                    <div class="home-buttons">
+                        <a href="./assets/cv/cv-guilherme.pdf" class="btn-home btn-cv" target="_blank">
+                            Ver CV
+                        </a>
+                        <a href="mailto:guilhermehsp26@gmail.com" class="btn-home btn-contact" target="_blank">
+                            Entre em Contato
+                        </a>
                     </div>
-                </div>
-                <div class="home-img">
-                    <img src="./assets/imgs/profilePic/profile-pic-415x415.png" alt="Foto de Guilherme">
+                   
                 </div>
             </div>
         </section>
 
         <section id="about">
             <div class="container">
-                <div class="about-container">
-                    <h1 class="text-blue title">Sobre</h1>
-                    <div class="text-about">
-                        <p>
-                            Meu nome é Guilherme Henrique, tenho 19 anos e sou estudante de Análise e Desenvolvimento de
-                            Sistemas no Centro Universitário Senac, no 2° semestre. Sou apaixonado por tecnologia e
-                            desenvolvimento web, atualmente focando em HTML, CSS, JavaScript, Java, MySQL, Git,
-                            TypeScript e
-                            React. Meus objetivos são aprender mais sobre desenvolvimento web, me tornar um
-                            desenvolvedor
-                            Full-Stack e encontrar uma empresa que me ofereça um ambiente de trabalho favorável ao
-                            crescimento profissional.
-                        </p>
-                    </div>
-                    <div class="box-about">
-                        <a href="" class="btn-about"><img src="./assets/imgs/Icons/contacts/brand-instagram.svg"
-                                alt=""></a>
-                        <a href="" class="btn-about"><img src="./assets/imgs/Icons/contacts/mail.svg" alt=""></a>
-                        <a href="" class="btn-about"><img src="./assets/imgs/Icons/contacts/phone.svg" alt=""></a>
-                        <a href="" class="btn-about"><img src="./assets/imgs/Icons/contacts/brand-github.svg"
-                                alt=""></a>
-                        <a href="" class="btn-about"><img src="./assets/imgs/Icons/contacts/brand-linkedin.svg"
-                                alt=""></a>
-                    </div>
+                <div class="about-content">
+                    
                 </div>
             </div>
         </section>
 
         <section id="tecnologies">
-            <div class="container">
-                <div class="tecnologies-container">
-                    <h1 class="text-blue title">Tecnologias</h1>
-                    <div class="tecnologies">
-                        <div class="tecnologies-item">
-                            <img src="./assets/imgs/Icons/tecnologies/brand-html5.svg" alt="HTML5">
-                            <p>HTML5</p>
-                        </div>
-                        <div class="tecnologies-item">
-                            <img src="./assets/imgs/Icons/tecnologies/brand-css3.svg" alt="CSS3">
-                            <p>CSS3</p>
-                        </div>
-                        <div class="tecnologies-item">
-                            <img src="./assets/imgs/Icons/tecnologies/brand-javascript.svg" alt="JavaScript">
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="tecnologies-item">
-                            <img src="./assets/imgs/Icons/tecnologies/java.svg" alt="Java">
-                            <p>Java</p>
-                        </div>
-                        <div class="tecnologies-item">
-                            <img src="./assets/imgs/Icons/tecnologies/brand-mysql.svg" alt="MySQL">
-                            <p>MySQL</p>
-                        </div>
-                        <div class="tecnologies-item">
-                            <img src="./assets/imgs/Icons/tecnologies/brand-git.svg" alt="Git">
-                            <p>Git</p>
-                        </div>
-                        <div class="tecnologies-item">
-                            <img src="./assets/imgs/Icons/tecnologies/brand-typescript.svg" alt="TypeScript">
-                            <p>TypeScript</p>
-                        </div>
-                        <div class="tecnologies-item">
-                            <img src="./assets/imgs/Icons/tecnologies/brand-react.svg" alt="React">
-                            <p>React</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </section>
 
         <section id="projects">
-            <div class="container">
-                <div class="projects-container">
-                    <h1 class="text-blue title">Projetos</h1>
 
-                    <div class="projects-box">
-                        <div class="project-item">
-                            <p>Em construção +</p>
-                            <div class="box-btn">
-                                 <p class="btn-projct">Ver Projeto</p>
-                            </div> 
-                        </div>
-                        <div class="project-item">
-                            <p>Em construção +</p>
-                            <div class="box-btn">
-                                 <p class="btn-projct">Ver Projeto</p>
-                            </div> 
-                        </div>
-                        <div class="project-item">
-                            <p>Em construção +</p>
-                            <div class="box-btn">
-                                 <p class="btn-projct">Ver Projeto</p>
-                            </div> 
-                        </div>
-                        <div class="project-item">
-                            <p>Em construção +</p>
-                            <div class="box-btn">
-                                 <p class="btn-projct">Ver Projeto</p>
-                            </div> 
-                        </div>
-                        <div class="project-item">
-                            <p>Em construção +</p>
-                            <div class="box-btn">
-                                 <p class="btn-projct">Ver Projeto</p>
-                            </div> 
-                        </div>
-                        <div class="project-item">
-                            <p>Em construção +</p>
-                            <div class="box-btn">
-                                 <p class="btn-projct">Ver Projeto</p>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
-        
+
         <section id="certificados">
-            <div class="container">
-                <div class="certificados-container">
-                    <h1 class="text-blue title">Certificados</h1>
-                    <div class="box-certificados">
-                        <ul>
-                            <li class="certificados-item">
-                                Certificado em Assistente de Suporte e Manutenção de Computadores no Centro Universitário Senac.
-                                <p class="text-blue">Concluído</p>
-                            </li>
-                            <li class="certificados-item">
-                                Certificado em Assistente Operações de Redes de Computadores no Centro Universitário Senac.
-                                <p class="text-blue">Concluído / Em emisão</p>
-                            </li>
-                            <li class="certificados-item">
-                                Certificado em Assistente de Desenvolvimento de Aplicativos Computacionais no Centro Universitário Senac.
-                                <p class="text-blue">Concluído / Em emisão</p>
-                            </li>
-                            <li class="certificados-item">
-                                Certificado em 5º Torneio Senac de Robótica no Centro Universitário Senac.
-                                <p class="text-blue">Concluído</p>
-                            </li>
-                        </ul>
-                </div>
-            </div>
+
+        </section>
     </main>
 
-    <script src="assets/JS/linkScroll.js"></script>
-    <script src="assets/JS/btnTop.js"></script>
-    <script src="assets/JS/BtnMenu.js"></script>
+    <script src="./assets/JS/scrpit.js"></script>
 </body>
 
 </html>
