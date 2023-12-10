@@ -64,7 +64,7 @@ const typeWriter = () => {
 
     const typing = element => {
         if (element == title){
-            element.innerHTML = `Olá, eu sou o Guilherme`
+            element.innerHTML = `Olá, eu sou o GUILHERME`
             const textArray = element.innerHTML.split('');
             element.innerHTML = ``;
 
@@ -72,7 +72,7 @@ const typeWriter = () => {
                 setTimeout(() => element.innerHTML += letter, 75 * i);
             });
         } else if (element == p1) {
-            element.innerHTML = `Desenvolvedor Front-end e Futuro Full-stack`
+            element.innerHTML = `Desenvolvedor Web Full-stack`
             const textArray = element.innerHTML.split('');
             element.innerHTML = ``;
 
@@ -90,9 +90,9 @@ const typeWriter = () => {
         }
     }
 
-    typing(title);
-    setTimeout(() => typing(p1), 1900);
-    setTimeout(() => typing(p2), 5275);
+    setTimeout(() => typing(title), 500);
+    setTimeout(() => typing(p1), 3600);
+    setTimeout(() => typing(p2), 7000);
 }
 
 typeWriter();
