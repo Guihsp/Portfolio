@@ -108,7 +108,7 @@ const createProject = () => {
         link.href = url;
         link.textContent = text;
         link.classList.add('btn', 'btn-project');
-        link.target = '_blank';
+        //link.target = '_blank';
         return link;
     }
 
@@ -116,30 +116,42 @@ const createProject = () => {
         const projectDiv = document.createElement('div');
         projectDiv.classList.add('project');
         projectDiv.id = `project-${project.id}`;
-
-        const imgDiv = document.createElement('div');
-        imgDiv.classList.add('img');
-        imgDiv.textContent = project.image;
-
+    
+        let imgElement;
+        if (project.image.match(/\.(jpeg|jpg|png)$/)) {
+            imgElement = document.createElement('img');
+            imgElement.src = project.image;
+            imgElement.classList.add('img');
+        } else {
+            imgElement = document.createElement('div');
+            imgElement.classList.add('img');
+            imgElement.textContent = project.image;
+        }
+    
+        const imgLink = document.createElement('a');
+        imgLink.href = project.viewProject;
+        imgLink.target = '_blank';
+        imgLink.appendChild(imgElement);
+    
         const projectInfoDiv = document.createElement('div');
         projectInfoDiv.classList.add('project-info');
-
+    
         const titleElement = document.createElement('h3');
         titleElement.textContent = project.title;
-
+    
         const descriptionElement = document.createElement('p');
         descriptionElement.textContent = project.description;
-
+    
         const buttonsDiv = document.createElement('div');
         buttonsDiv.classList.add('project-buttons');
-
+    
         const viewProjectLink = createLink(project.viewProject, 'Ver Projeto');
         const repositoryLink = createLink(project.repository, 'Repositório');
-
+    
         buttonsDiv.append(viewProjectLink, repositoryLink);
         projectInfoDiv.append(titleElement, descriptionElement, buttonsDiv);
-        projectDiv.append(imgDiv, projectInfoDiv);
-
+        projectDiv.append(imgLink, projectInfoDiv);
+    
         return projectDiv;
     }
 
@@ -152,30 +164,21 @@ const createProject = () => {
     addProjectsToHTML();
 }
 
+const btnTop = () => {
+    const btn = document.getElementById(`btn-top`);
+    console.log(btn);
+    
+    btn.addEventListener(`click`, function () {
+        window.scrollTo(0, 0);
+    });
+}
+
+btnTop();
 createProject();
 typeWriter();
 scrollSmooth();
 btnMenu();
-/*
-const btnTop = () => {
-    const btn = document.getElementById(`btn-top`);
 
-    btn.addEventListener(`click`, function () {
-        window.scrollTo(0, 0);
-    })
 
-    document.addEventListener(`scroll`, ocultar);
-
-    function ocultar() {
-        if (window.scrollY > 200) {
-            btn.style.display = `flex`;
-        } else {
-            btn.style.display = `none`;
-        }
-    }
-
-    ocultar();
-}
-*/
 
 
