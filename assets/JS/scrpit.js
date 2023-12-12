@@ -32,7 +32,7 @@ const scrollSmooth = () => {
         const section = document.querySelector(id).offsetTop;
 
         window.scroll({
-            top: section - 100,
+            top: section - 70,
         })
     }
 }
@@ -82,8 +82,8 @@ const createProject = () => {
             title: 'Em Breve',
             image: 'Em construção',
             description: 'Este projeto está sendo desenvolvido. Em breve estará disponível para visualização.',
-            viewProject: '#',
-            repository: '#'
+            viewProject: '',
+            repository: ''
         },
         {
             id: 2,
@@ -95,6 +95,14 @@ const createProject = () => {
         },
         {
             id: 3,
+            title: 'Em Breve',
+            image: 'Em construção',
+            description: 'Este projeto está sendo desenvolvido. Em breve estará disponível para visualização.',
+            viewProject: '#',
+            repository: '#'
+        },
+        {
+            id: 4,
             title: 'Em Breve',
             image: 'Em construção',
             description: 'Este projeto está sendo desenvolvido. Em breve estará disponível para visualização.',
@@ -130,7 +138,7 @@ const createProject = () => {
     
         const imgLink = document.createElement('a');
         imgLink.href = project.viewProject;
-        imgLink.target = '_blank';
+        //imgLink.target = '_blank';
         imgLink.appendChild(imgElement);
     
         const projectInfoDiv = document.createElement('div');
@@ -178,7 +186,3 @@ createProject();
 typeWriter();
 scrollSmooth();
 btnMenu();
-
-
-
-
