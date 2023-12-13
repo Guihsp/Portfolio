@@ -59,7 +59,7 @@ const typeWriter = () => {
             textArray.forEach((letter, i) => {
                 setTimeout(() => element.innerHTML += letter, 75 * i);
             });
-        } else if (element == p2) {
+        } else {
             element.innerHTML = `Bem-vindo ao meu portfólio`
             const textArray = element.innerHTML.split('');
             element.innerHTML = ``;
@@ -174,13 +174,33 @@ const createProject = () => {
 
 const btnTop = () => {
     const btn = document.getElementById(`btn-top`);
-    console.log(btn);
     
     btn.addEventListener(`click`, function () {
         window.scrollTo(0, 0);
     });
 }
 
+const scrollAnimation = () => {
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add(`show`);
+            } 
+        });
+    }, {
+        rootMargin: '-18% 0px -18% 0px'
+    });
+
+    const elements = document.querySelectorAll(`.hidden`);
+
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+    
+}
+
+scrollAnimation();
 btnTop();
 createProject();
 typeWriter();
