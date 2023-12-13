@@ -124,7 +124,7 @@ const createProject = () => {
         const projectDiv = document.createElement('div');
         projectDiv.classList.add('project');
         projectDiv.id = `project-${project.id}`;
-    
+
         let imgElement;
         if (project.image.match(/\.(jpeg|jpg|png)$/)) {
             imgElement = document.createElement('img');
@@ -135,31 +135,31 @@ const createProject = () => {
             imgElement.classList.add('img');
             imgElement.textContent = project.image;
         }
-    
+
         const imgLink = document.createElement('a');
         imgLink.href = project.viewProject;
         //imgLink.target = '_blank';
         imgLink.appendChild(imgElement);
-    
+
         const projectInfoDiv = document.createElement('div');
         projectInfoDiv.classList.add('project-info');
-    
+
         const titleElement = document.createElement('h3');
         titleElement.textContent = project.title;
-    
+
         const descriptionElement = document.createElement('p');
         descriptionElement.textContent = project.description;
-    
+
         const buttonsDiv = document.createElement('div');
         buttonsDiv.classList.add('project-buttons');
-    
+
         const viewProjectLink = createLink(project.viewProject, 'Ver Projeto');
         const repositoryLink = createLink(project.repository, 'Repositório');
-    
+
         buttonsDiv.append(viewProjectLink, repositoryLink);
         projectInfoDiv.append(titleElement, descriptionElement, buttonsDiv);
         projectDiv.append(imgLink, projectInfoDiv);
-    
+
         return projectDiv;
     }
 
@@ -174,7 +174,7 @@ const createProject = () => {
 
 const btnTop = () => {
     const btn = document.getElementById(`btn-top`);
-    
+
     btn.addEventListener(`click`, function () {
         window.scrollTo(0, 0);
     });
@@ -186,7 +186,7 @@ const scrollAnimation = () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add(`show`);
-            } 
+            }
         });
     }, {
         rootMargin: '-18% 0px -18% 0px'
@@ -197,12 +197,16 @@ const scrollAnimation = () => {
     elements.forEach(element => {
         observer.observe(element);
     });
-    
+
 }
 
-scrollAnimation();
-btnTop();
-createProject();
-typeWriter();
-scrollSmooth();
-btnMenu();
+const init = () => {
+    scrollAnimation();
+    btnTop();
+    createProject();
+    typeWriter();
+    scrollSmooth();
+    btnMenu();
+}
+
+window.onload = init;
