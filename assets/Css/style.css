@@ -19,6 +19,7 @@
 
 p, h1,h2,h3,h4,h5,h6,a,span,li{
     letter-spacing: 1px;
+    color: #fff;
 }
 
 body,
@@ -381,6 +382,10 @@ header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.projects-content .titlle{
+    color: var(--black-primary);
 }
 
 .projects-content .boder{
