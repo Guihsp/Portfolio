@@ -1,4 +1,3 @@
-
 const btnMenu = () => {
     const btnMobile = document.getElementById('btn-menu');
     const nav = document.getElementById('nav-bar');
@@ -16,25 +15,6 @@ const btnMenu = () => {
             nav.classList.remove('active');
         });
     });
-}
-
-const scrollSmooth = () => {
-    const menuItems = document.querySelectorAll(`#nav-bar .nav-link[href^="#"]`);
-
-    menuItems.forEach(item => {
-        item.addEventListener(`click`, scrollTOIdOnClick);
-    })
-
-    function scrollTOIdOnClick(event) {
-        event.preventDefault();
-        const element = event.target;
-        const id = element.getAttribute(`href`);
-        const section = document.querySelector(id).offsetTop;
-
-        window.scroll({
-            top: section - 70,
-        })
-    }
 }
 
 const typeWriter = () => {
@@ -172,16 +152,27 @@ const createProject = () => {
     addProjectsToHTML();
 }
 
-const btnTop = () => {
-    const btn = document.getElementById(`btn-top`);
+const scrollSmooth = () => {
+    const menuItems = document.querySelectorAll(`#nav-bar .nav-link[href^="#"]`);
 
-    btn.addEventListener(`click`, function () {
-        window.scrollTo(0, 0);
-    });
+    menuItems.forEach(item => {
+        item.addEventListener(`click`, scrollTOIdOnClick);
+    })
+
+    function scrollTOIdOnClick(event) {
+        event.preventDefault();
+        const element = event.target;
+        const id = element.getAttribute(`href`);
+        const section = document.querySelector(id).offsetTop;
+
+        window.scroll({
+            top: section - 70,
+        })
+    }
 }
 
 const scrollAnimation = () => {
-
+    
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -191,22 +182,30 @@ const scrollAnimation = () => {
     }, {
         rootMargin: '-18% 0px -18% 0px'
     });
-
+    
     const elements = document.querySelectorAll(`.hidden`);
-
+    
     elements.forEach(element => {
         observer.observe(element);
     });
+    
+}
 
+const btnTop = () => {
+    const btn = document.getElementById(`btn-top`);
+
+    btn.addEventListener(`click`, function () {
+        window.scrollTo(0, 0);
+    });
 }
 
 const init = () => {
-    scrollAnimation();
-    btnTop();
-    createProject();
-    typeWriter();
-    scrollSmooth();
-    btnMenu();
+btnMenu();
+typeWriter();
+createProject();
+scrollSmooth();
+scrollAnimation();
+btnTop();
 }
 
 window.onload = init;
