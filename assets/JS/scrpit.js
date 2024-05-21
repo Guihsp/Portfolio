@@ -90,11 +90,12 @@ const createProjects = () => {
         },
         {
             id: 3,
-            title: 'Em Breve',
-            image: 'Em construção',
-            description: 'Este projeto está sendo desenvolvido. Em breve estará disponível para visualização.',
-            viewProject: '',
-            repository: ''
+            title: 'Agenda de Contatos',
+            image: 'assets/imgs/contact-book.png',
+            description: `A aplicação é uma agenda de contatos, onde é possível cadastrar, listar, atualizar e deletar contatos. 
+                         Também conta com um sistema de autenticação, onde é possível realizar o cadastro de usuários, login e logout onde as informações são armazenadas no banco de dados mongoDB.`,	
+            viewProject: 'https://github.com/Guihsp/agenda-contatos',
+            repository: 'https://github.com/Guihsp/agenda-contatos'
         },
         {
             id: 4,
@@ -225,13 +226,9 @@ const btnTop = () => {
     });
 }
 
-const init = () => {
 btnMenu();
 typeWriter();
 createProjects();
 scrollSmooth();
 scrollAnimation();
 btnTop();
-}
-
-window.onload = init;

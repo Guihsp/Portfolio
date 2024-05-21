@@ -80,10 +80,6 @@ header .container {
     text-transform: uppercase;
 }
 
-.logo span {
-    color: var(--color-gray-600);
-}
-
 #nav-bar ul {
     display: flex;
     align-items: center;
@@ -343,7 +339,6 @@ header .container {
 .tecnologies{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
     width: 90%;
