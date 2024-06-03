@@ -1,5 +1,5 @@
 // Lista de tecnologias
-const tecnologiesList = [
+const technologiesList = [
     {
         category: 'Back-End',
         technologies: [
@@ -77,7 +77,7 @@ const createCategoryItem = (category, index) => {
 const loadTechnologies = () => {
     const list = document.querySelector('.tech-list'); 
 
-    const categoryItems = tecnologiesList.map(createCategoryItem).join('');
+    const categoryItems = technologiesList.map(createCategoryItem).join('');
     list.innerHTML = categoryItems;
 }
 
