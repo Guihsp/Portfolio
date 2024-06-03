@@ -4,177 +4,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/Css/style.css">
     <link rel="shortcut icon" href="assets/imgs/favicon.svg" type="image/x-icon">
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="/styles/style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/de8a43e29d.js" crossorigin="anonymous"></script>
+    <!-- Scripts -->
+    <script defer src="/js/main.js"></script>
+    <script defer src="/js/loadTecnologies.js"></script>
+    <script defer src="/js/loadProjects.js"></script>
     <title>Portfólio - Guilherme Henrique</title>
 </head>
 
 <body>
 
+    <!-- Header -->
     <header>
         <div class="container">
-            <div class="logo">
-                <h1>Guilherme H.</h1>
-            </div>
+            <nav class="nav-bar">
+                <a href="/" class="logo ">
+                    GUILHERME.
+                </a>
 
-            <nav id="nav-bar">
-                <button id="btn-menu">
-                    <span id="hamburger"></span>
-                </button>
-                <ul>
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">Sobre</a></li>
-                    <li><a href="#tecnologies" class="nav-link">Tecnologias</a></li>
-                    <li><a href="#projects" class="nav-link">Projetos</a></li>
-                    <li>
-                        <a href="https://github.com/Guihsp" class="btn" target="_blank">
-                            <img src="./assets/imgs/github.svg" alt="">
-                            Github
+                <!-- Mobile button -->
+                <div id="btn-mobile">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+
+                <!-- Nav list -->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link link-scroll">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tech" class="nav-link link-scroll">Tecnologias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link link-scroll">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link link-scroll">
+                            Contato
                         </a>
                     </li>
-
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="home">
+    <!-- Section  Intro -->
+    <section id="intro">
+        <div class="overlay"></div>
+
         <div class="container">
-            <div class="home-content ">
-                <div class="home-intro">
-                    <div class="home-text">
-                        <h2 class="home-title"></h2>
-                        <div class="boder"></div>
-                        <p class="sub1"></p>
-                        <p class="sub2"></p>
-                    </div>
+            <div class="intro-text">
+                <h1 class="heading"></h1>
+                <p class="subheading "></p>
+                <p class="description "></p>
 
-                    <div class="home-buttons">
-                        <a href="./assets/cv/cv-guilherme-henrique-silva-pereira (1).pdf" class="btn btn-cv"
-                            target="_blank">
-                            Ver Currículo
-                        </a>
-                        <a href="mailto:guilhermehsp26@gmail.com" class="btn btn-contact" target="_blank">
-                            Entre em Contato
-                        </a>
-                    </div>
-                </div>
-
-                <div class="home-img">
-                    <img src="./assets/imgs/Foto-perfil.jpg" class="pic" alt="Foto">
-                    <div class="contacts">
-                        <a href="https://www.linkedin.com/in/guilherme-henrique-silva-pereira-9283b023a"
-                            class="btn-contact" target="_blank">
-                            <img src="./assets/imgs/linkedin.svg" alt="Linkedin">
-                        </a>
-                        <a href="https://www.instagram.com/guizin__silva" class="btn-contact" target="_blank">
-                            <img src="./assets/imgs/instagram.svg" alt="Instagram">
-                        </a>
-                        <a href="https://api.whatsapp.com/send?phone=5511993123958" class="btn-contact" target="_blank">
-                            <img src="./assets/imgs/telephone.svg" alt="Telefone">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    <section id="about">
-        <div class="container ">
-            <div class="about-content hidden">
-                <h2 class="titlle">Sobre</h2>
-                <div class="boder"></div>
-                <p>
-                    Sou Guilherme Henrique, estudante de Análise e Desenvolvimento de Sistemas apaixonado por tecnologia principalmente em
-                    programação. Concentro meus esforços em aprimorar minhas
-                    habilidades em desenvolvimento de software utilizando diversas
-                    tecnologias como Java, JavaScript, React e Node.js. Quero contribuir com
-                    projetos e continuar aprendendo para crescer profissionalmente como
-                    Desenvolvedor criando soluções inovadoras e experiências incríveis para usuários.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="tecnologies">
-        <div class="container ">
-            <div class="tecnologies-content hidden">
-                <h2 class="titlle">Tecnologias</h2>
-                <div class="boder"></div>
-                
-                <div class="tecnologies">
-                    <div class="tecnology">
-                        <img src="./assets/imgs/html5.svg" alt="HTML5">
-                        <p>HTML5</p>
-                    </div>
-                    <div class="tecnology">
-                        <img src="./assets/imgs/css3-alt.svg" alt="CSS3">
-                        <p>CSS3</p>
-                    </div>
-                    <div class="tecnology">
-                        <img src="./assets/imgs/js.svg" alt="JavaScript">
-                        <p>JavaScript</p>
-                    </div>
-                    <div class="tecnology">
-                        <img src="./assets/imgs/typescript.svg" alt="TypeScript">
-                        <p>TypeScript</p>
-                    </div>
-                    <div class="tecnology">
-                        <img src="./assets/imgs/react.svg" alt="React">
-                        <p>React</p>
-                    </div>
-                    <div class="tecnology">
-                        <img src="./assets/imgs/java.svg" alt="Java">
-                        <p>Java</p>
-                    </div>
-                    <div class="tecnology">
-                        <img src="./assets/imgs/sql.svg" alt="SQL">
-                        <p>SQL</p>
-                    </div>
-                    <div class="tecnology">
-                        <img src="./assets/imgs/bootstrap-fill.svg" alt="Bootstrap">
-                        <p>Bootstrap</p>
-                    </div>
-                    <div class="tecnology">
-                        <img src="./assets/imgs/figma.svg" alt="Figma">
-                        <p>Figma</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <div class="projects-content hidden">
-                <h2 class="titlle">Projetos</h2>
-                <div class="boder"></div>
-
-                <div class="projects">
-                </div>
-            </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div id="btn-top">
-                    <img src="./assets/imgs/arrow-up-short.svg" alt="Seta">
-                </div>
-
-                <div id="btn-repository">
-                    <a href="https://github.com/Guihsp/Portfolio" target="_blank">
-                        Repositório
+                <div class="social-midias">
+                    <a href="https://github.com/guihsp" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/guilherme-henrique-silva-pereira-9283b023a" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/guizin__silva/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
                 </div>
 
+                <a href="#about" class="btn-intro link-scroll">
+                    <i class="fas fa-chevron-down"></i>
+                    Ler mais
+                </a>
+            </div>
 
+            <div class="intro-img">
+                <img src="assets/imgs/photo.jpg" alt="Desenvolvedor">
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Section About -->
+    <section id="about">
+        <div class="container hidden">
+            <div class="about-text">
+                <h2 class="heading">Sobre</h2>
+                <p class="subheading ">
+                    Um dev apaixonado por tecnologia e programação
+                </p>
+            </div>
+
+            <div class="about-description">
+                <p class="description ">
+                    Sou desenvolvedor de software com paixão por tecnologia e programação. Sempre busco novos desafios e oportunidades para expandir minhas habilidades e conhecimentos. Tenho um forte interesse em resolver problemas complexos e em trabalhar em projetos que impactem positivamente a vida das pessoas.
+                </p>
+                <p class="description ">
+                    Tenho experiência prática com tecnologias como Java, JavaScript, React, Node.js, MySQL e MongoDB, entre outras.
+                </p>
+                <p class="description ">
+                    Gosto de criar soluções inovadoras e eficientes para problemas do dia a dia, sempre aprendendo e evoluindo. Valorizo a colaboração em equipe e acredito que a troca de conhecimentos é fundamental para o crescimento profissional.
+                </p>
+                <p class="description ">
+                    Atualmente, estou cursando Análise e Desenvolvimento de Sistemas no Centro Universitário Senac, onde aprofundo meus conhecimentos e habilidades em desenvolvimento de software. Estou em busca de oportunidades para ganhar experiência na área e aplicar meus conhecimentos em projetos reais.
+                </p>
+                <p class="description ">
+                    Se quiser saber mais sobre mim ou o que faço, sinta-se à vontade para entrar em contato.
+                </p>
+            </div>
+
+            <a href="assets/cv/cv-guilherme-henrique-silva-pereira (1).pdf" class=" btn btn-cv" target="_blank">
+                Download CV
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Section Tech -->
+    <section id="tech">
+        <div class="container hidden">
+            <div class="tech-text">
+                <h2 class="heading">Tecnologias</h2>
+                <p class="subheading ">
+                    Tecnologias que utilizo e estudo.
+                </p>
+            </div>
+
+            <div class="tech-list">
             </div>
         </div>
+    </section>
+
+    <!-- Section Projects -->
+    <section id="projects">
+        <div class="container hidden">
+            <div class="projects-text">
+                <h2 class="heading">Projetos</h2>
+                <p class="subheading ">
+                    Alguns dos projetos que desenvolvi.
+                </p>
+            </div>
+
+            <div class="projects-list">
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <div class="container hidden">
+            <div class="contact-text">
+                <h2 class="heading">Contato</h2>
+                <p class="subheading ">
+                    Entre em contato comigo.
+                </p>
+
+                <p class="description ">
+                    Se você tem alguma dúvida, sugestão ou proposta de trabalho, fique à vontade para entrar em contato
+                    comigo. Responderei o mais rápido possível.
+                </p>
+
+            </div>
+
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xkndlbrq" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Seu email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" id="subject" placeholder="Assunto" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" placeholder="Sua mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-form">Enviar</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+
+            <p class="footer-text ">
+                Guilherme Henrique - 2024
+            </p>
+
+            <div class="social-midias">
+                <a href="https://github.com/guihsp" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/guilherme-henrique-silva-pereira-9283b023a" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/guizin__silva/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+
+        </div>
+
     </footer>
 
-
-
-    <script src="./assets/JS/scrpit.js"></script>
+    <!-- Button Top -->
+    <button id="btn-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 </body>
 
 </html>
