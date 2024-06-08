@@ -71,7 +71,7 @@ const scrollSmooth = () => {
         event.preventDefault();
         let element = event.target;
 
-        if (element.tagName.toLowerCase() === 'img') {
+        if (element.tagName.toLowerCase() === 'i') {
             element = element.parentNode;
         }
 
