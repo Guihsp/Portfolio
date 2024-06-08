@@ -55,7 +55,7 @@ const typeWriter = () => {
         }
     }
 
-    setTimeout(() => typing(title), 500);
+    setTimeout(() => typing(title), 900);
     setTimeout(() => typing(h2), 3000);
     setTimeout(() => typing(p), 5000);
 }
@@ -71,14 +71,12 @@ const scrollSmooth = () => {
         event.preventDefault();
         let element = event.target;
 
-        if (element.tagName.toLowerCase() === 'i') {
+        if (element.tagName.toLowerCase() === 'img') {
             element = element.parentNode;
         }
 
         const id = element.getAttribute(`href`);
-        console.log(id);
         const section = document.querySelector(id).offsetTop;
-        console.log(section);
 
         window.scroll({
             top: section - 70,
@@ -108,13 +106,13 @@ const scrollAnimation = () => {
 const btnTop = () => {
     const btn = document.getElementById(`btn-top`);
 
-    btn.addEventListener(`click`,  () => {
+    btn.addEventListener(`click`, () => {
         window.scrollTo(0, 0);
     });
 
     btn.style.display = 'none';
 
-    window.addEventListener('scroll',  () => {
+    window.addEventListener('scroll', () => {
         if (window.scrollY > 270) {
             btn.style.display = 'block';
         } else {
@@ -125,7 +123,7 @@ const btnTop = () => {
 
 
 const headerScroll = () => {
-    window.addEventListener('scroll',  ()  => {
+    window.addEventListener('scroll', () => {
         const header = document.querySelector('header');
         if (window.scrollY > 60) {
             header.classList.add('header-scrolled');
@@ -135,10 +133,18 @@ const headerScroll = () => {
     });
 }
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    
+    preloader.style.opacity = '0';
+
+    setTimeout(() => {
+        preloader.style.display = 'none';
+    }, 700);
+
+    typeWriter();
     headerScroll();
     btnMenu();
-    typeWriter();
     scrollSmooth();
     scrollAnimation();
     btnTop();

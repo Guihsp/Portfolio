@@ -15,7 +15,8 @@ const technologiesList = [
             { name: 'CSS', description: 'Linguagem de estilização de páginas web.' },
             { name: 'JavaScript', description: 'Linguagem de programação interpretada.' },
             { name: 'React', description: 'Biblioteca JavaScript para construção de interfaces de usuário.' },
-            { name: 'TypeScript', description: 'Superset da linguagem JavaScript.' }
+            { name: 'TypeScript', description: 'Superset da linguagem JavaScript.' },
+            { name: 'Sass', description: 'Pré-processador CSS.' }
         ]
     },
     {
@@ -38,7 +39,6 @@ const technologiesList = [
             { name: 'Comunicação', description: 'Capacidade de transmitir informações de forma clara e objetiva.' },
             { name: 'Trabalho em Equipe', description: 'Capacidade de colaborar e interagir com outras pessoas.' },
             { name: 'Resolução de Problemas', description: 'Capacidade de identificar e solucionar problemas de forma eficaz.' },
-            { name: 'Adaptabilidade', description: 'Capacidade de se ajustar a novas situações e contextos.' },
         ]
     }
 ];
@@ -52,21 +52,22 @@ const createTechnologyItem = technology => {
     `;
 }
 
-const createCategoryItem = (category, index) => {
+const createCategoryItem = (category) => {
     const technologyItems = category.technologies.map(createTechnologyItem).join('');
+    const categoryId = category.category.replace(/\s+/g, '-').toLowerCase();
 
     return `
     <div class="tech-category">
-        <input type="checkbox" class="tech-category-input" id="tech-category-${index + 1}">
+        <input type="checkbox" class="tech-category-input" id="${categoryId}">
 
         <div class="tech-category-contents">
-            <label for="tech-category-${index + 1}">
+            <label for="${categoryId}">
                 <h3 class="tech-category-title">
                     ${category.category}
                 </h3>
             </label>
 
-            <ul class="tech-list">
+            <ul class="list">
                 ${technologyItems}
             </ul>
         </div>
@@ -75,7 +76,7 @@ const createCategoryItem = (category, index) => {
 }
 
 const loadTechnologies = () => {
-    const list = document.querySelector('.tech-list'); 
+    const list = document.querySelector('.tech-list');
 
     const categoryItems = technologiesList.map(createCategoryItem).join('');
     list.innerHTML = categoryItems;
