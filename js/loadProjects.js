@@ -4,7 +4,7 @@ const projectsList = [
         description: `Aplicação web para gerenciar contatos.`,
         technologies: [`HTML`, `CSS`, `JavaScript`, `Node.js`, `Express`, `MongoDB`],
         image: `contact-book.png`,
-        link: `#`,
+        link: `/`,
         repos: `https://github.com/guihsp/agenda-de-contatos`
     },
     {
@@ -25,14 +25,11 @@ const projectsList = [
     }
 ];
 
-document.addEventListener('DOMContentLoaded', () => {
-    const projectContainer = document.querySelector('.projects-list');
+const createProject = project => {
+    const techs = project.technologies.map(tech => `<span class="tech">${tech}</span>`).join('');
 
-    projectsList.forEach(project => {
-        const techs = project.technologies.map(tech => `<span>${tech}</span>`).join('');
-
-        const projectCard = `
-            <div class="project-card">
+    return `
+        <div class="project-card">
                 <img src="assets/imgs/projects/${project.image}" alt="${project.name}">
                 <div class="project-infos">
                     <h3 class="project-title">${project.name}</h3>
@@ -44,8 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     </nav>
                 </div>
             </div>
-        `;
+    `;
+}
 
-        projectContainer.innerHTML += projectCard;
-    });
-});
+const loadProjects = () => {
+    const projects = document.querySelector(`.projects-list`);
+    const projectsItems = projectsList.map(createProject).join('');
+
+    projects.innerHTML = projectsItems;
+}
+
+loadProjects(); 

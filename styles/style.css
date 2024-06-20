@@ -169,14 +169,14 @@ body.no-scroll {
     opacity: 0;
     filter: blur(2px);
     transform: translatex(-100%);
-    transition: 1s all;
+    transition: .9s all;
 }
 
 .show {
     opacity: 1;
     filter: blur(0);
     transform: translatex(0);
-    transition: 2s all;
+    transition: .9s all;
 }
 
 
@@ -193,10 +193,6 @@ header {
 
 header.header-scrolled {
     background: var(--main-bg-color);
-}
-
-header.active-bg {
-    background-color: var(--main-bg-color);
 }
 
 header .container .nav-bar {

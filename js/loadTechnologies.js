@@ -82,4 +82,4 @@ const loadTechnologies = () => {
     list.innerHTML = categoryItems;
 }
 
-window.addEventListener('DOMContentLoaded', loadTechnologies);
+loadTechnologies();

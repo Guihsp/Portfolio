@@ -32,32 +32,42 @@ const typeWriter = () => {
     const h2 = document.querySelector(`.intro-text .subheading`);
     const p = document.querySelector(`.intro-text .description`);
 
-    const typing = element => {
+    const typing = (element, callback) => {
+        let text;
         if (element == title) {
-            element.innerHTML = `Olá, eu sou o Guilherme!`
+            text = `Olá, eu sou o Guilherme!`;
         } else if (element == h2) {
-            element.innerHTML = `Desenvolvedor de Software`
+            text = `Desenvolvedor de Software`;
         } else {
-            element.innerHTML = `Sou um dev apaixonado por tecnologia e inovação, com talento para resolver problemas complexos e criar soluções. Vamos trabalhar juntos?`
+            text = `Sou um dev apaixonado por tecnologia e inovação, com talento para resolver problemas complexos e criar soluções. Vamos trabalhar juntos?`;
         }
 
         element.classList.add(`typing`);
 
-        const textArray = element.innerHTML.split('');
-        element.innerHTML = ``;
+        const textArray = text.split('');
+        element.innerHTML = '';
 
         textArray.forEach((letter, i) => {
             setTimeout(() => element.innerHTML += letter, 75 * i);
         });
 
-        if (element != p) {
-            setTimeout(() => element.classList.remove('typing'), 75 * textArray.length);
-        }
+        setTimeout(() => {
+            if (element != p) {
+                element.classList.remove('typing');
+            }
+            callback();
+        }, 75 * textArray.length);
     }
 
-    setTimeout(() => typing(title), 900);
-    setTimeout(() => typing(h2), 3000);
-    setTimeout(() => typing(p), 5000);
+    typing(title, () => {
+        setTimeout(() => {
+            typing(h2, () => {
+                setTimeout(() => {
+                    typing(p, () => {});
+                }, 300);
+            });
+        }, 300);
+    });
 }
 
 const scrollSmooth = () => {
@@ -93,7 +103,7 @@ const scrollAnimation = () => {
             }
         });
     }, {
-        rootMargin: '-18% 0px -18% 0px'
+        rootMargin: '-30% 0px -30% 0px'
     });
 
     const elements = document.querySelectorAll(`.hidden`);
@@ -137,10 +147,7 @@ window.addEventListener('load', () => {
     const preloader = document.getElementById('preloader');
     
     preloader.style.opacity = '0';
-
-    setTimeout(() => {
-        preloader.style.display = 'none';
-    }, 700);
+    preloader.style.display = 'none';
 
     typeWriter();
     headerScroll();
