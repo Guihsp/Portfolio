@@ -22,6 +22,14 @@ const projectsList = [
         image: `github-card.png`,
         link: `https://github-card-3d.netlify.app/`,
         repos: `https://github.com/Guihsp/Github-Card-3D`
+    },
+    {
+        name: `Climate View`,
+        description: `Aplicação web para buscar informações climáticas de uma cidade.`,
+        technologies: [`React`, `Vite`, `Styled-components`, `Axios`],
+        image: `climate-view.png`,
+        link: `https://climate-view.vercel.app/`,
+        repos: `https://github.com/guihsp/climate-view`
     }
 ];
 
