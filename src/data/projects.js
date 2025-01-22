@@ -1,3 +1,7 @@
+import climateViewImage from '../assets/images/projects/climate-view.png';
+import todoListImage from '../assets/images/projects/todo-list.png';
+import contactBookImage from '../assets/images/projects/contact-book.png';
+
 export const projects = [
     {
         id: 1,
@@ -9,7 +13,7 @@ export const projects = [
         
         Para mais detalhes sobre o projeto, você pode acessar o repositório no GitHub, assistir ao vídeo de apresentação, ou explorar a aplicação online.`,
         date: "Setembro 10, 2024",
-        image: "./src/assets/images/projects/climate-view.png",
+        image: climateViewImage,
         linkDeploy: "https://climate-view.vercel.app/",
         linkRepository: "https://github.com/guihsp/climate-view",
         videoId: "QVMMVjUqTws"
@@ -24,7 +28,7 @@ export const projects = [
         
         Confira mais detalhes acessando o repositório no GitHub, assista ao vídeo de apresentação ou utilize o aplicativo online.`,
         date: "Maio 2, 2024",
-        image: "./src/assets/images/projects/todo-list.png",
+        image: todoListImage,
         linkDeploy: "https://lista-de-tarefas-guihsp.netlify.app/",
         linkRepository: "https://github.com/Guihsp/Lista-de-Tarefas",
         videoId: "gAvbAIyu-9c"
@@ -39,7 +43,7 @@ export const projects = [
         
         Para mais informações, acesse o repositório no GitHub ou assista ao vídeo de apresentação.`,
         date: "Maio 25, 2024",
-        image: "./src/assets/images/projects/contact-book.png",
+        image: contactBookImage,
         linkDeploy: "",
         linkRepository: "https://github.com/Guihsp/agenda-contatos",
         videoId: "ezX9S5sXduQ"
