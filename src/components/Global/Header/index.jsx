@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { StyledHeader, ButtonMenu } from './styles';
-import { Container } from '../../../styles/container';
 
-import logo from '../../../assets/logo.svg';
+import { HeaderContainer, ButtonMenu } from './styles';
+import { Container } from '../Container';
+import logo from '../../../assets/images/icons/logo.svg';
 
 export const Header = () => {
 
@@ -18,18 +18,16 @@ export const Header = () => {
     };
 
     return (
-        <StyledHeader>
+        <HeaderContainer>
             <Container>
+                <Link to="/">
+                    <img src={logo} alt="Logo" />
+                </Link>
+
                 <nav>
-
-                    <Link to="/">
-                        <img src={logo} alt="Logo" />
-                    </Link>
-
                     <ul className={menuActive ? 'active' : ''}>
                         <li><NavLink to="/" activeClassName="active" onClick={handleLinkClick}>Inicio</NavLink></li>
                         <li><NavLink to="/about" activeClassName="active" onClick={handleLinkClick}>Sobre</NavLink></li>
-                        <li><NavLink to="/skills" activeClassName="active" onClick={handleLinkClick}>Skills</NavLink></li>
                         <li><NavLink to="/projects" activeClassName="active" onClick={handleLinkClick}>Projetos</NavLink></li>
                         <li><NavLink to="/contact" activeClassName="active" onClick={handleLinkClick}>Contato</NavLink></li>
                     </ul>
@@ -41,7 +39,7 @@ export const Header = () => {
                     </ButtonMenu>
                 </nav>
             </Container>
-        </StyledHeader>
+        </HeaderContainer>
     );
 }
 

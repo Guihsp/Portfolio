@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const useTypedEffect = (strings, typeSpeed, backSpeed, backDelay) => {
+export const useTypedEffect = (strings, typeSpeed, backSpeed, backDelay) => {
     const [text, setText] = useState('');
     const [isDeleting, setIsDeleting] = useState(false);
     const [loopNum, setLoopNum] = useState(0);
@@ -35,4 +35,3 @@ const useTypedEffect = (strings, typeSpeed, backSpeed, backDelay) => {
     return text;
 };
 
-export default useTypedEffect;

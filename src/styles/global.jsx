@@ -9,8 +9,21 @@ export const GlobalStyle = createGlobalStyle`
         --tertiary-color: #7b18d8;
         --text-color-light: #fff;
         --text-color-dark: #0d0d0d;
-        --text-color-light-2: #a2a2a2;
+        --text-color-light-2: #FFFFFFC9;
         --border-color: #fff;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--tertiary-color);
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: var(--background-color);
     }
 
     * {
@@ -32,6 +45,7 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Poppins', sans-serif;
         background-color: var(--background-color);
         min-height: 100vh;
+        overflow-x: hidden;
     }   
 
 `;
