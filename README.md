@@ -2,6 +2,8 @@
 
 Bem-vindo ao meu portfólio em constante evolução! Para acessar o site do portfólio, clique [aqui](https://guilherme-dev-portfolio.vercel.app/).
 
+![Portfolio](https://imgur.com/q7f28vJ.png)
+
 ## Objetivo
 
 Este projeto foi desenvolvido com o objetivo de apresentar minhas habilidades, experiências e projetos de forma clara e organizada. O portfólio foi projetado para ser responsivo e acessível, garantindo uma experiência de usuário agradável e consistente em diferentes dispositivos e navegadores. 
