@@ -4,15 +4,14 @@ Bem-vindo ao meu portfólio em constante evolução! Para acessar o site do port
 
 ## Objetivo
 
-Este projeto tem como principal propósito aprimorar minhas habilidades em Front-End, explorando de maneira aprofundada as linguagens HTML 5, CSS 3 e JavaScript. Além disso, visa apresentar de forma prática e atraente meu conjunto de conhecimentos para potenciais recrutadores.
+Este projeto foi desenvolvido com o objetivo de apresentar minhas habilidades, experiências e projetos de forma clara e organizada. O portfólio foi projetado para ser responsivo e acessível, garantindo uma experiência de usuário agradável e consistente em diferentes dispositivos e navegadores. 
 
 ## Tecnologias Utilizadas
 
-O desenvolvimento do meu portfólio envolveu a aplicação das seguintes tecnologias:
-
-- **HTML5:** Utilizado para estruturar o conteúdo do site, proporcionando uma base sólida e semântica.
-- **CSS3:** Responsável pela estilização do layout, garantindo uma apresentação visualmente atraente e compatível com diferentes dispositivos.
-- **JavaScript:** Integrado para adicionar interatividade e dinamismo, proporcionando uma experiência mais envolvente aos visitantes.
+- **React:** O portfólio foi desenvolvido utilizando o framework React, que permite a criação de interfaces de usuário interativas e dinâmicas.
+- **Styled Components:** A estilização do portfólio foi feita utilizando a biblioteca Styled Components, que permite a criação de componentes estilizados com CSS-in-JS.
+- **React Icons:** A biblioteca React Icons foi utilizada para adicionar ícones ao portfólio.
+- **React Router:** O React Router foi utilizado para a navegação entre as diferentes páginas do portfólio.
 
 ## Recursos Futuros
 
