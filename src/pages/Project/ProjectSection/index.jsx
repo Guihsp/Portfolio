@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Container } from '../../../components/Global/Container';
 import { Button } from '../../../components/Button';
+import { Loader } from '../../../components/Global/Loader';
 import { ProjectDetails } from './styles';
 import { getProject } from '../../../services/api/projects';
 
@@ -16,7 +17,7 @@ export const Project = () => {
     }, [id]);
 
     if (!project) {
-        return <p>Carregando...</p>;
+        return <Loader />;
     }
 
     return (
