@@ -1,15 +1,22 @@
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Container } from '../../../components/Global/Container';
 import { Button } from '../../../components/Button';
 import { ProjectDetails } from './styles';
-import { projects } from '../../../data/projects';
+import { getProject } from '../../../services/api/projects';
 
 export const Project = () => {
-    const { name } = useParams();
-    const project = projects.find(p => p.name.toLowerCase().replace(/\s+/g, '-') === name);
+    const { id } = useParams();
+    const [project, setProject] = useState(null);
+
+    useEffect(() => {
+        getProject(id)
+            .then(project => setProject(project))
+            .catch(error => console.error("Erro ao buscar projeto:", error));
+    }, [id]);
 
     if (!project) {
-        return <p>Projeto não encontrado</p>;
+        return <p>Carregando...</p>;
     }
 
     return (
@@ -35,17 +42,19 @@ export const Project = () => {
                     <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
 
                     <div>
-                        <p>
-                            Para ver mais sobre o projeto acesse os links abaixo:
-                        </p>
-                        {project.linkDeploy && (
-                            <Button to={project.linkDeploy} external primary>
-                                Acessar projeto
+                        <div>
+                            <p>
+                                Para ver mais sobre o projeto acesse os links abaixo:
+                            </p>
+                            {project.linkDeploy && (
+                                <Button to={project.linkDeploy} external primary>
+                                    Acessar projeto
+                                </Button>
+                            )}
+                            <Button to={project.linkRepository} external>
+                                Ver código fonte
                             </Button>
-                        )}
-                        <Button to={project.linkRepository} external>
-                            Ver código fonte
-                        </Button>
+                        </div>
                     </div>
                 </div>
             </ProjectDetails>

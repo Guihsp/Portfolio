@@ -77,7 +77,7 @@ export const AboutSection = () => {
                     </div>
                     <h3>Desenvolvimento Web</h3>
                     <p>
-                        Desenvolvimento de sites e aplicações web com as melhores tecnologias do mercado.
+                        Desenvolvimento de sites e aplicações web completas, com as melhores tecnologias do mercado.
                     </p>
                 </div>
                 <div>

@@ -93,13 +93,12 @@ export const ProjectDetails = styled.div`
         grid-template-columns: 3fr 1fr;
         grid-template-rows: auto;
         gap: 2rem;
-        position: relative;
+        padding: 4rem 2rem;
 
         iframe {
             max-width: 800px;
             width: 100%;     
             height: calc(800px * 9 / 16);
-            margin-top: 4rem;
         }
 
         & > p {
@@ -112,26 +111,28 @@ export const ProjectDetails = styled.div`
             width: 100%;
             grid-column: 1;
             grid-row: 2;
-            margin-bottom: 4rem;
+            margin-top: 2rem ;
         }
 
         div {
-            border-left: 1px solid #333;
-            padding: 4rem 1rem; 
-            height: 100%;
-            grid-row: 1 / 3;
+            position: sticky;
+            top: 4rem;
 
-            p {
-                font-size: calc(1rem + 0.1vw);
-                font-weight: 300;
-                text-align: left;
-                letter-spacing: 1px;
-                color: var(--text-color-light-2);
-                margin-bottom: 2rem;
-            }
+            div {
+                padding: 4rem 0; 
 
-            a {
-                margin-bottom: 1rem;
+                p {
+                    font-size: calc(1rem + 0.1vw);
+                    font-weight: 300;
+                    text-align: left;
+                    letter-spacing: 1px;
+                    color: var(--text-color-light-2);
+                    margin-bottom: 2rem;
+                }
+
+                a {
+                    margin-bottom: 1rem;
+                }
             }
         }   
 
@@ -144,24 +145,17 @@ export const ProjectDetails = styled.div`
                 margin:0 ;
             }
 
-            & > p {
-                margin-bottom: 1rem;
-            }
-
             div {
-                border-left: none;
-                padding: 0;
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                gap: 1rem;
-
-                p {
-                    display: none;
-                }
-
-                a {
-                    margin-bottom: 0rem;
+                div {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 1rem;
+                    padding: 0;
+    
+                    p {
+                        display: none;
+                    }
                 }
             }
         }

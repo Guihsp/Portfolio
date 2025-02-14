@@ -13,7 +13,7 @@ export const AppRoutes = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/projects/:name" element={<ProjectDetails />} />
+            <Route path="/projects/:id" element={<ProjectDetails />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Error404 />} />
         </Routes>

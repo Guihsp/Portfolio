@@ -3,7 +3,7 @@ import { NavLink, Link } from 'react-router-dom';
 
 import { HeaderContainer, ButtonMenu } from './styles';
 import { Container } from '../Container';
-import logo from '../../../assets/images/icons/logo.svg';
+import logo from '../../../assets/logo.svg';
 
 export const Header = () => {
 

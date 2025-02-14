@@ -4,7 +4,7 @@ export const Intro = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 90vh;
+    min-height: 85vh;
     padding: 2rem 0;
     
     h1 { 
