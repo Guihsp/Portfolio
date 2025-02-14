@@ -41,7 +41,7 @@ export const AboutSection = () => {
                         Fale comigo
                     </Button>
 
-                    <Button to="/cv/cv-guilherme-henrique-silva-pereira.pdf" external >
+                    <Button to="/cv/cv-guilherme-henrique.pdf" external >
                         Ver currículo
                     </Button>
                 </div>
