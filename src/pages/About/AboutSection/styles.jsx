@@ -5,6 +5,7 @@ export const Intro = styled.div`
     flex-direction: column;
     justify-content: center;
     min-height: 90vh;
+    padding: 4rem 0;
 
     h1 {
         font-size: .9rem;
@@ -136,8 +137,9 @@ export const About = styled.div`
     }
 
     & > div:nth-child(3) {
-        display: flex;
-        gap: 2rem;
+        display: flex;                   
+        flex-wrap: wrap;
+        gap: 1rem;
         grid-column: 1;
     }
 
@@ -164,16 +166,7 @@ export const About = styled.div`
 
         & > div:nth-child(3) {
             gap: .5rem;
-            flex-wrap: wrap;
-
-            a {
-                padding: .8rem;
-            }
         }
-    }
-
-    @media (max-width: 768px) {
-
     }
 `;
 

@@ -93,7 +93,7 @@ export const ProjectDetails = styled.div`
         grid-template-columns: 3fr 1fr;
         grid-template-rows: auto;
         gap: 2rem;
-        padding: 4rem 2rem;
+        padding: 4rem 0rem;
 
         iframe {
             max-width: 800px;
@@ -119,8 +119,12 @@ export const ProjectDetails = styled.div`
             top: 4rem;
 
             div {
-                padding: 4rem 0; 
+                padding: 4rem 0;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem; 
 
+                
                 p {
                     font-size: calc(1rem + 0.1vw);
                     font-weight: 300;
@@ -129,9 +133,9 @@ export const ProjectDetails = styled.div`
                     color: var(--text-color-light-2);
                     margin-bottom: 2rem;
                 }
-
+                
                 a {
-                    margin-bottom: 1rem;
+                    width: 100%;
                 }
             }
         }   
@@ -147,14 +151,16 @@ export const ProjectDetails = styled.div`
 
             div {
                 div {
-                    width: 100%;
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 1rem;
                     padding: 0;
-    
+                    flex-direction: row;
+                    gap: .5rem;
+
                     p {
                         display: none;
+                    }
+
+                    a {
+                        width: auto;
                     }
                 }
             }
@@ -163,14 +169,6 @@ export const ProjectDetails = styled.div`
         @media (max-width: 535px) {
             iframe {
                 height: calc(400px * 9 / 16);
-            }
-
-            div {
-                gap: .5rem;
-                a {
-                    padding: 1rem .8rem;
-                    font-size: .9rem;
-                }
             }
         }
     }

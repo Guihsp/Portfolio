@@ -1,7 +1,9 @@
 import { useForm, ValidationError } from '@formspree/react';
 import { Container } from '../../../components/Global/Container';
 import { Button } from '../../../components/Button';
-import { FormContainer, Message, StyledValidationError } from './styles'
+import { FaInstagram, FaLinkedinIn, FaRegEnvelope } from "react-icons/fa";
+import { FiPhone } from "react-icons/fi";
+import { FormContainer, Message, StyledValidationError, Contacts } from './styles'
 
 export const ContactSection = () => {
     const [state, handleSubmit] = useForm("xannvdew");
@@ -82,6 +84,24 @@ export const ContactSection = () => {
                         Enviar
                     </button>
                 </form>
+
+                <p>ou</p>
+
+                <Contacts>
+                    <a href="https://www.instagram.com/guizin__Silva" target="_blank" rel="noreferrer">
+                        <FaInstagram />
+                    </a>
+                    <a href="https://linkedin.com/in/guilherme-henrique-silva-pereira-9283b023a" target="_blank" rel="noreferrer">
+                        <FaLinkedinIn />
+                    </a>
+                    <a href="mailto:guilhermehsp26@gmail.com">
+                        <FaRegEnvelope />
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5511993123958" target='__blank' rel="noreferrer">
+                        <FiPhone />
+                    </a>
+                </Contacts>
+
             </FormContainer>
             
         </Container>

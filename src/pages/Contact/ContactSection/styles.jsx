@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FormContainer = styled.div`
-    padding: 6rem 2rem;
+    padding: 6rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,6 +69,54 @@ export const FormContainer = styled.div`
         }
     }
     
+    p {
+        color: var(--text-color-light);
+        font-size: calc(1rem + 0.1vw);
+        text-transform: uppercase;
+        margin: 1rem 0;
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20%;
+            height: 1px;
+            background-color: var(--border-color);
+        }
+
+        &::before {
+            right: 50%;
+            margin-right: 2rem;
+        }
+
+        &::after {
+            left: 50%;
+            margin-left: 2rem;
+        }
+    }
+`;
+
+export const Contacts = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+
+    a {
+        color: var(--text-color-light);
+        font-size: 1.5rem;
+        transition: color 0.3s;
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
 `;
 
 export const Message = styled.div`

@@ -5,7 +5,7 @@ export const Intro = styled.section`
     flex-direction: column;
     justify-content: center;
     min-height: 85vh;
-    padding: 2rem 0;
+    padding: 4rem 0;
     
     h1 { 
         font-size: .9rem;
@@ -38,6 +38,7 @@ export const Intro = styled.section`
     div {
         display: flex;
         gap: 1rem;
+        flex-wrap: wrap;
     }
 
     @media (max-width: 768px) {
@@ -83,10 +84,6 @@ export const Intro = styled.section`
 
         div {
             gap: 0.5rem;
-            a {
-                padding: 0.8rem 1rem;
-                font-size: 0.9rem;
-            }
         }
     }
 

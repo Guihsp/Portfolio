@@ -37,6 +37,11 @@ const BaseButton = styled.a`
     &:hover {
         color: var(--text-color-light);
     }
+
+    @media (max-width: 768px) {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
 `;
 
 export const StyledButton = styled(BaseButton).attrs({ as: Link })``;
