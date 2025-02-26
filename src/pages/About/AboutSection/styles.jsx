@@ -235,7 +235,7 @@ export const Skills = styled.div`
         flex-direction: column;
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 440px) {
         div {
             justify-content: center;
         }

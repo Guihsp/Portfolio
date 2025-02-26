@@ -19,35 +19,31 @@ export const ProjectDetails = styled.div`
             transform: translateX(-50%);
         }
         
-        div {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-
-            h1 {
-                font-size: 1rem;
-                font-weight: 400;
-                letter-spacing: 1px;
-                background: var(--primary-color);
-                color: var(--text-color-light);
-                padding:0 0.5rem;
-            }
-
-            p {
-                font-size: .9rem;
-                font-weight: 300;
-                letter-spacing: 1px;
-                color: var(--text-color-light-2);
-            }
+        h1 {
+            font-size: 1rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            background: var(--primary-color);
+            color: var(--text-color-light);
+            padding:0 0.5rem;
+            width: fit-content;
         }
 
         h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: 400;
             letter-spacing: 1px;
             color: var(--text-color-light);
-            margin-top: 1rem;
+            margin: 1rem 0;
         }
+
+        p {
+            font-size: .9rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            color: var(--text-color-light-2);
+        }
+
 
         @media (max-width: 1109px) {
             padding: 4rem 4rem 4rem 0;
@@ -90,15 +86,15 @@ export const ProjectDetails = styled.div`
 
     & > :nth-child(2) {
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 4fr 1fr;
         grid-template-rows: auto;
-        gap: 2rem;
-        padding: 4rem 0rem;
+        gap: 3rem;
 
         iframe {
             max-width: 800px;
             width: 100%;     
             height: calc(800px * 9 / 16);
+            margin-top: 4rem;
         }
 
         & > p {
@@ -111,12 +107,23 @@ export const ProjectDetails = styled.div`
             width: 100%;
             grid-column: 1;
             grid-row: 2;
-            margin-top: 2rem ;
+            margin-bottom: 4rem ;
         }
 
         div {
             position: sticky;
             top: 4rem;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -10%;
+                width: 1px;
+                height: 100vh;
+                background-color: #333;
+            }
+
 
             div {
                 padding: 4rem 0;
@@ -126,7 +133,7 @@ export const ProjectDetails = styled.div`
 
                 
                 p {
-                    font-size: calc(1rem + 0.1vw);
+                    font-size: calc(.9rem + 0.1vw);
                     font-weight: 300;
                     text-align: left;
                     letter-spacing: 1px;
@@ -149,7 +156,18 @@ export const ProjectDetails = styled.div`
                 margin:0 ;
             }
 
+            p {
+                margin: 0;
+            }
+
             div {
+                position: relative;
+                top: 0;
+
+                &::before {
+                    display: none;
+                }
+
                 div {
                     padding: 0;
                     flex-direction: row;

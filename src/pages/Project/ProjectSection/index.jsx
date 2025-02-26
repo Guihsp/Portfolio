@@ -24,11 +24,9 @@ export const Project = () => {
         <Container>
             <ProjectDetails>
                 <div>
-                    <div>
-                        <h1>{project.name}</h1>
-                        <p>{project.date}</p>
-                    </div>
+                    <h1>{project.name}</h1>
                     <h2>{project.title}</h2>
+                    <p>{project.date}</p>
                 </div>
 
                 <div>
@@ -45,7 +43,7 @@ export const Project = () => {
                     <div>
                         <div>
                             <p>
-                                Para ver mais sobre o projeto acesse os links abaixo:
+                                Se interessou pelo projeto? Acesse o link abaixo para ver mais detalhes.                                
                             </p>
                             {project.linkDeploy && (
                                 <Button to={project.linkDeploy} external primary>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Card = styled.li`
-    padding: 6rem 5rem;
+    padding: 6rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -50,9 +50,11 @@ export const Card = styled.li`
                 padding: 0rem .5rem;
                 letter-spacing: 1px;
                 white-space: nowrap;
+
             }
 
             :nth-child(2) {
+                font-size: .9rem;
                 color: var(--text-color-light-2);
                 font-size: .9rem;
                 letter-spacing: 1px;
@@ -62,15 +64,11 @@ export const Card = styled.li`
 
         h2 {
             color: var(--text-color-light);
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             font-weight: 400;
             letter-spacing: 1px;
         }
 
-        a {
-            padding: .5rem 1rem;
-            width: fit-content;
-        }   
     }
 
     @media (max-width: 1096px) {
@@ -83,7 +81,7 @@ export const Card = styled.li`
 
         & > a:nth-child(2) {
             h2 {
-                font-size: 1rem;
+                font-size: 1.1rem;
             }
         }
     }
@@ -106,20 +104,33 @@ export const Card = styled.li`
 
             div {
                 gap: .5rem;
-
-                p{
-                    font-size: .7rem;
-                }
             }
 
+        }
+    }
+
+    @media (max-width: 440px) {
+        padding: 3rem 1rem;
+        gap: 1rem;
+
+    }
+
+    @media (max-width: 375px) {
+        & > a:nth-child(2) {
             h2 {
-                font-size: .9rem;
+                font-size: 1rem;
             }
         }
     }
 
-    @media (max-width: 420px) {
+    @media (max-width: 320px) {
         padding: 2rem 1rem;
         gap: 1rem;
+
+        & > a:nth-child(2) {
+            h2 {
+                font-size: .9rem;
+            }
+        }
     }
 `;
