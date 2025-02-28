@@ -21,7 +21,7 @@ export const AboutSection = () => {
                     <span>{text}</span>
                 </h2>
                 <p>
-                    Criando sites e aplicações web com as melhores tecnologias do mercado.
+                    Criando aplicações web completas, responsivas e escaláveis.
                 </p>
             </Intro>
 
@@ -30,10 +30,10 @@ export const AboutSection = () => {
                     Um dev apaixonado por tecnologia e programação.
                 </h2>
                 <p>
-                    Desenvolvedor Web com experiência em React, Next.js, TypeScript, Java, Angular, MySQL,
-                    e consumo de APIs REST. Tambem tenho conhecimento em projetos com metodologias ágeis,
-                    como o Scrum. Apaixonado por tecnologia e programação, sempre buscando aprender mais e
-                    se aprimorar. Atuamente cursando Análise e Desenvolvimento de Sistemas no Senac - Santo Amaro.
+                    Desenvolvedor Web com experiência prática em React, Next.js, TypeScript, Java, Angular e MySQL, 
+                    além de integração com APIs REST. Trabalho na construção de aplicações completas, do front-end ao back-end,
+                    aplicando boas práticas de desenvolvimento e metodologias ágeis, como Scrum. Atualmente, curso Análise e Desenvolvimento de Sistemas no Senac - Santo Amaro, 
+                    aprimorando minhas habilidades para entregar soluções eficientes e escaláveis.
                 </p>
 
                 <div>
@@ -77,7 +77,7 @@ export const AboutSection = () => {
                     </div>
                     <h3>Desenvolvimento Web</h3>
                     <p>
-                        Desenvolvimento de sites e aplicações web completas, com as melhores tecnologias do mercado.
+                        Criação de sites e aplicações web performáticas e escaláveis com tecnologia moderna.
                     </p>
                 </div>
                 <div>
@@ -86,7 +86,7 @@ export const AboutSection = () => {
                     </div>
                     <h3>Responsividade</h3>
                     <p>
-                        Sites e aplicações web responsivos, que se adaptam a qualquer dispositivo.
+                        Interfaces adaptáveis para uma experiência fluida em qualquer dispositivo.
                     </p>
                 </div>
                 <div>
@@ -95,7 +95,7 @@ export const AboutSection = () => {
                     </div>
                     <h3>APIs REST</h3>
                     <p>
-                        Consumo e criação de APIs REST para integração de sistemas.
+                        Desenvolvimento e consumo de APIs para integração eficiente entre sistemas.
                     </p>
                 </div>
 

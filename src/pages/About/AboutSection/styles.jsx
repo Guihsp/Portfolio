@@ -145,6 +145,7 @@ export const About = styled.div`
 
     & > div:nth-child(4) {
         display: flex;
+        flex-wrap: wrap;
         gap: 2rem;
         grid-column: 2;
         
@@ -245,10 +246,9 @@ export const Skills = styled.div`
 export const Services = styled.div`
     display: flex;
 
-    
     & > div {
         width: 100%;
-        padding: 4rem 3rem;
+        padding: 4rem 1.5rem;
 
         & > div {
             display: inline-flex;
@@ -256,7 +256,7 @@ export const Services = styled.div`
             justify-content: center;
             background-color: var(--tertiary-color);
             padding: .2rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
 
             svg {
                 font-size: 2rem;
@@ -266,7 +266,7 @@ export const Services = styled.div`
 
         h3 {
             font-size:  calc(1rem + 0.1vw);
-            font-weight: 400;
+            font-weight: 500;
             color: var(--text-color-light);
             margin-bottom: .2rem;
             letter-spacing: 0.1rem;
@@ -289,11 +289,6 @@ export const Services = styled.div`
         border-right: 1px solid #333;
     }
 
-    @media (max-width: 1242px) {
-        p {
-            font-size: 0.9rem;
-        }
-    }
 
     @media (max-width: 1000px) {
         flex-direction: column;

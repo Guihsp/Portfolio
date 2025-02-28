@@ -1,6 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-
 import { HeaderContainer, ButtonMenu } from './styles';
 import { Container } from '../Container';
 import logo from '../../../assets/logo.svg';
@@ -16,6 +15,14 @@ export const Header = () => {
     const handleLinkClick = () => {
         setMenuActive(false);
     };
+
+    useEffect(() => {
+        if (menuActive) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    }, [menuActive]);
 
     return (
         <HeaderContainer>

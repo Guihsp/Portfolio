@@ -189,5 +189,11 @@ export const ProjectDetails = styled.div`
                 height: calc(400px * 9 / 16);
             }
         }
+
+        @media (max-width: 370px) {
+            a {
+                font-size: .8rem;
+            }
+        }
     }
 `;

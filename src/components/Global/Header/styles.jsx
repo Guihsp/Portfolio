@@ -37,8 +37,8 @@ export const HeaderContainer = styled.header`
                 &.active {
                     display: block;
                     overflow-y: auto;
-                    max-height: 500px;
-     
+                    height: 100vh;
+                    border-top: 1px solid var(--border-color);
                     li {
                         width: 100%;
                         padding: 1rem 1rem;

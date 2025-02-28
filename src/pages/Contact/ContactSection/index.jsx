@@ -94,7 +94,7 @@ export const ContactSection = () => {
                     <a href="https://linkedin.com/in/guilherme-henrique-silva-pereira-9283b023a" target="_blank" rel="noreferrer">
                         <FaLinkedinIn />
                     </a>
-                    <a href="mailto:guilhermehsp26@gmail.com">
+                    <a href="mailto:guilhermehsp26@gmail.com" target="_blank" rel="noreferrer">
                         <FaRegEnvelope />
                     </a>
                     <a href="https://api.whatsapp.com/send?phone=5511993123958" target='__blank' rel="noreferrer">
