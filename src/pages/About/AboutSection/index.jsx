@@ -1,4 +1,4 @@
-import { Intro, About, Skills, Services } from './styles.jsx';
+import { Intro, About, Skills, Services, Experience } from './styles.jsx';
 import { Container } from '../../../components/Global/Container';
 import { Button } from '../../../components/Button';
 import { SkillsList } from '../../../components/Skills/SkillsList';
@@ -30,10 +30,14 @@ export const AboutSection = () => {
                     Um dev apaixonado por tecnologia e programação.
                 </h2>
                 <p>
-                    Desenvolvedor Web com experiência prática em React, Next.js, TypeScript, Java, Angular e MySQL, 
-                    além de integração com APIs REST. Trabalho na construção de aplicações completas, do front-end ao back-end,
-                    aplicando boas práticas de desenvolvimento e metodologias ágeis, como Scrum. Atualmente, curso Análise e Desenvolvimento de Sistemas no Senac - Santo Amaro, 
-                    aprimorando minhas habilidades para entregar soluções eficientes e escaláveis.
+                    Sou Desenvolvedor de Software com experiência prática em aplicações full-stack no setor financeiro,
+                    atuando no front-end com Angular e React e no back-end com Java, Spring Boot, Node.js e Nest.js.
+                    Tenho facilidade em aprender rapidamente, traduzir problemas complexos em soluções objetivas e
+                    trabalhar com APIs, integrações e arquiteturas escaláveis.
+                    <br />
+                    Sou formado em Análise e Desenvolvimento de Sistemas pelo Senac e sigo evoluindo minhas habilidades
+                    com foco em escrever código limpo, seguro e bem estruturado, sempre buscando impacto real para o usuário e
+                    para o produto.
                 </p>
 
                 <div>
@@ -75,9 +79,9 @@ export const AboutSection = () => {
                     <div>
                         <TbDeviceDesktopCode />
                     </div>
-                    <h3>Desenvolvimento Web</h3>
+                    <h3>Desenvolvimento Full-Stack</h3>
                     <p>
-                        Criação de sites e aplicações web performáticas e escaláveis com tecnologia moderna.
+                        Criação de aplicações completas, do front-end ao back-end, com foco em desempenho e escalabilidade.
                     </p>
                 </div>
                 <div>
@@ -100,6 +104,24 @@ export const AboutSection = () => {
                 </div>
 
             </Services>
+
+            <Experience >
+                <h2> Experiência </h2>
+                <div className='time-line'>
+                    <div className='time-line_item'>
+                        <div>
+                            <h3 className='time-line_item_title'>Software Developer</h3>
+                            <h4 className='time-line_item_subtitle'>Grupo Sarfaty</h4>
+                            <time className='time-line_item_time'>Junho 2025 - Presente</time>
+                            <p className='time-line_item_description'>
+                                Desenvolvimento de funcionalidades para operações financeiras utilizando
+                                Angular no front-end e Java/Node.js no back-end. Atuação em projetos de
+                                crédito, validação de arquivos financeiros e controle de acesso.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </Experience>
         </Container>
     );
 };

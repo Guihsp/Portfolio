@@ -321,6 +321,161 @@ export const Services = styled.div`
 
         }
     }
+`;
+
+export const Experience = styled.div`
+    padding: 4rem 0;
+    position: relative;
+
     
-    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 50%;
+        width: 100vw;
+        height: 100%;
+        background-color: #00102a;
+        transform: translateX(-50%);
+    }
+
+    & h2 {
+        font-size: calc(1.35rem + 0.1vw);
+        font-weight: 400;
+        color: var(--text-color-light);
+        margin-bottom: 2rem;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        position: relative;
+        height: fit-content;
+
+        &::after { 
+            content: '';
+            position: absolute; 
+            width: 5rem;
+            height: 3px;
+            background-color: var(--secondary-color);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .time-line {
+        position: relative;
+        min-height: 200px;
+        margin-top: 2rem;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            width: 1px;
+            background-color: var(--secondary-color);
+            transform: translateX(-50%);
+
+            @media (max-width: 910px) {
+                left: 8px;
+            }
+        }
+
+        &_item {
+            color: var(--text-color-light);
+            width: 50%;
+            padding: 1rem 3rem 0 3rem;
+            position: relative; 
+
+            @media (max-width: 910px) {
+                width: 100%;
+            }
+
+            @media (max-width: 446px) {
+                padding: 1rem 1rem 0 2.2rem;
+            }
+
+            &::after {
+                content: '';
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                border: 3px solid var(--secondary-color);
+                background-color: var(--background-color);
+                position: absolute;
+                top: 20px;
+                right: 0px;
+                transform: translateX(50%);
+
+                @media (max-width: 910px) {
+                    left: -16px;
+                }
+            }
+            
+            & div {
+                background-color: var(--quaternary-color);
+                padding: 1rem;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    height: 15px;
+                    width: 15px;
+                    background-color: var(--quaternary-color);
+                    position: absolute;
+                    top: 15px;
+                    right: -8px;
+                    transform: translateY(-50%) rotate(45deg);
+
+                    @media (max-width: 910px) {
+                        left: -8px;
+                    }
+                }
+            }
+
+            &.right {
+                margin-left: 50%;
+
+                &::after {
+                    right: auto;
+                    left: 0px;
+                    transform: translateX(-50%);
+                }
+
+                & div::before {
+                    right: auto;
+                    left: -8px;
+                }
+            }
+
+            &_title {
+                font-size: 1.2rem;
+                font-weight: 600;
+                display: inline-block;
+                margin-bottom: 0.5rem;
+            }
+
+            &_subtitle {
+                font-size: 1rem;
+                font-weight: 400;
+                color: var(--text-color-light-2);
+                margin-bottom: 0.3rem;
+                font-style: italic; 
+                text-transform: uppercase;
+            }
+
+            &_time {
+                font-size: 0.9rem;
+                font-weight: 300;
+            }
+
+            &_description {
+                font-size: 1rem;
+                line-height: 1.6;
+                letter-spacing: 0.05rem;
+                margin-top: 0.5rem;
+            }
+        }
+    }
 `;

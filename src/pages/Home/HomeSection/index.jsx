@@ -4,7 +4,7 @@ import { Intro } from "./styles.jsx";
 import { Button } from "../../../components/Button";
 
 export const HomeSection = () => {
-    const strings = ["Desenvolvedor Web"];
+    const strings = ["Desenvolvedor de Software"];
     const text = useTypedEffect(strings, 50, 50, 8000);
 
     return (

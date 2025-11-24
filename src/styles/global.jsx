@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
         --primary-color: #48008c;
         --secondary-color: #fff;
         --tertiary-color: #7b18d8;
+        --quaternary-color: #002c6ffc;
         --text-color-light: #fff;
         --text-color-dark: #0d0d0d;
         --text-color-light-2: #FFFFFFC9;
